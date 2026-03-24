@@ -33,7 +33,16 @@ function CTAButton({ children, className = "" }: { children: React.ReactNode; cl
       href={WA_LINK}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-block bg-primary text-primary-foreground px-8 py-4 font-body text-sm font-semibold uppercase tracking-[0.2em] hover:opacity-90 transition-opacity ${className}`}
+      className={`inline-block bg-primary text-primary-foreground px-8 py-4 font-body text-sm font-semibold uppercase tracking-[0.2em] rounded-lg transition-all duration-300 ease-in-out hover:scale-[1.02] ${className}`}
+      style={{
+        boxShadow: "0 8px 20px rgba(0,0,0,0.25), 0 0 20px rgba(212,175,55,0.25)",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.boxShadow = "0 10px 25px rgba(0,0,0,0.3), 0 0 30px rgba(212,175,55,0.4)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.boxShadow = "0 8px 20px rgba(0,0,0,0.25), 0 0 20px rgba(212,175,55,0.25)";
+      }}
     >
       {children}
     </a>
