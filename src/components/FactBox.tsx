@@ -38,7 +38,7 @@ export default function FactBox() {
 
   return (
     <div
-      className="absolute top-24 right-4 sm:right-8 z-20 max-w-[280px] sm:max-w-xs p-5 rounded-xl border"
+      className="absolute bottom-10 right-4 sm:bottom-14 sm:right-8 md:bottom-16 md:right-12 z-20 max-w-[280px] sm:max-w-xs p-5 rounded-xl border"
       style={{
         background: "rgba(0, 0, 0, 0.5)",
         backdropFilter: "blur(16px)",
