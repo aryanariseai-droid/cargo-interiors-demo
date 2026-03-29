@@ -8,6 +8,9 @@ import homeImage from "@/assets/home-interior.jpg";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
+import HeroSlider from "@/components/HeroSlider";
+import FactBox from "@/components/FactBox";
+import BrandLogoSlider from "@/components/BrandLogoSlider";
 
 const WA_LINK = "https://wa.me/919050656162?text=Hi%2C%20Cargo%20Interiors!%20I%20wanted%20to%20discuss%20about%20some%20interior%20designing%20project%2C%20Please%20reply.%20Thanks!";
 
