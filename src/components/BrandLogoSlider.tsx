@@ -1,32 +1,46 @@
+import havas from "@/assets/brands/havas.png";
+import cybercity from "@/assets/brands/cybercity.png";
+import cyberhub from "@/assets/brands/cyberhub.png";
+import lg from "@/assets/brands/lg.png";
+import samsung from "@/assets/brands/samsung.png";
+import sagarratna from "@/assets/brands/sagarratna.png";
+import sobhacity from "@/assets/brands/sobhacity.png";
+import eldeco from "@/assets/brands/eldeco.png";
+
 const BRANDS = [
-  "Havells", "Asian Paints", "Godrej", "Tata Steel", "Saint-Gobain",
-  "Philips", "Kohler", "Schneider", "JSW", "Kajaria",
+  { src: havas, alt: "Havas Media Network" },
+  { src: cybercity, alt: "Cyber City" },
+  { src: cyberhub, alt: "Cyber Hub" },
+  { src: lg, alt: "LG" },
+  { src: samsung, alt: "Samsung" },
+  { src: sagarratna, alt: "Sagar Ratna" },
+  { src: sobhacity, alt: "Sobha City" },
+  { src: eldeco, alt: "Eldeco" },
 ];
 
 export default function BrandLogoSlider() {
-  // Duplicate for seamless loop
   const doubled = [...BRANDS, ...BRANDS];
 
   return (
-    <div className="py-10 border-y border-border overflow-hidden bg-background">
-      <div className="max-w-6xl mx-auto px-6 mb-4">
+    <div className="py-12 border-y border-border overflow-hidden bg-background">
+      <div className="max-w-6xl mx-auto px-6 mb-8">
         <span className="text-muted-foreground font-body text-xs uppercase tracking-[0.3em]">
-          Trusted by Leading Brands
+          Trusted By Brands
         </span>
       </div>
-      <div className="relative">
-        <div className="flex animate-scroll-logos gap-16 w-max">
+      <div className="relative group">
+        <div className="flex animate-scroll-logos gap-20 w-max group-hover:[animation-play-state:paused]">
           {doubled.map((brand, i) => (
             <div
-              key={`${brand}-${i}`}
-              className="flex-shrink-0 flex items-center justify-center h-10 px-6"
+              key={`${brand.alt}-${i}`}
+              className="flex-shrink-0 flex items-center justify-center h-14 px-4"
             >
-              <span
-                className="font-display text-lg font-bold tracking-wide whitespace-nowrap"
-                style={{ color: "hsl(0 0% 40%)" }}
-              >
-                {brand}
-              </span>
+              <img
+                src={brand.src}
+                alt={brand.alt}
+                className="h-full w-auto object-contain brightness-0 invert opacity-60 hover:opacity-90 transition-opacity duration-300"
+                loading="lazy"
+              />
             </div>
           ))}
         </div>
