@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState, useCallback } from "react";
 import { motion, useInView } from "framer-motion";
 import heroImage from "@/assets/hero-showroom.jpg";
 import showroomImage from "@/assets/showroom-interior.jpg";
