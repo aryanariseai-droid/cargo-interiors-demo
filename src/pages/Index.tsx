@@ -8,6 +8,9 @@ import homeImage from "@/assets/home-interior.jpg";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
+import HeroSlider from "@/components/HeroSlider";
+import FactBox from "@/components/FactBox";
+import BrandLogoSlider from "@/components/BrandLogoSlider";
 
 const WA_LINK = "https://wa.me/919050656162?text=Hi%2C%20Cargo%20Interiors!%20I%20wanted%20to%20discuss%20about%20some%20interior%20designing%20project%2C%20Please%20reply.%20Thanks!";
 
@@ -79,8 +82,8 @@ export default function Index() {
 
       {/* HERO */}
       <section className="relative h-screen flex items-center justify-center">
-        <img src={heroImage} alt="Luxury commercial interior" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
-        <div className="hero-overlay absolute inset-0" />
+        <HeroSlider images={[heroImage, showroomImage, officeImage, commercialImage]} interval={3000} />
+        <FactBox />
         <div className="relative z-10 text-center max-w-4xl px-6">
           <motion.p
             initial={{ opacity: 0 }}
@@ -128,7 +131,8 @@ export default function Index() {
         </motion.div>
       </section>
 
-      {/* TRUST BAR */}
+      {/* BRAND LOGO SLIDER */}
+      <BrandLogoSlider />
       <Section className="py-16 border-y border-border">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[

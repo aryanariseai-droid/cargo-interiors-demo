@@ -107,3 +107,12 @@
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+@keyframes scrollLogos {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-logos {
+  animation: scrollLogos 30s linear infinite;
+}
