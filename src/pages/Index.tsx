@@ -16,6 +16,7 @@ import TechVisualization from "@/components/TechVisualization";
 import IntroAnimation from "@/components/IntroAnimation";
 import SEOHead from "@/components/SEOHead";
 import { Section, CTAButton, SectionLabel, WA_LINK } from "@/components/Layout";
+import { organizationSchema, localBusinessSchema, serviceSchema } from "@/data/schemaMarkup";
 
 export default function Index() {
   const [introComplete, setIntroComplete] = useState(false);
