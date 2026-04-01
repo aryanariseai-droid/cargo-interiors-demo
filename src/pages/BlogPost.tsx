@@ -191,11 +191,11 @@ export default function BlogPost() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="https://wa.me/919050656162?text=Hi%2C%20Cargo%20Interiors!%20I%20wanted%20to%20discuss%20about%20some%20interior%20designing%20project%2C%20Please%20reply.%20Thanks" target="_blank" rel="noopener noreferrer"
-              className="inline-block bg-primary text-primary-foreground px-8 py-4 font-body text-sm font-semibold uppercase tracking-[0.2em] rounded-lg hover:bg-primary/90 transition-colors">
+              className="btn-glow">
               Book Consultation
             </a>
             <Link to="/contact-us"
-              className="inline-block border border-primary text-primary px-8 py-4 font-body text-sm font-semibold uppercase tracking-[0.2em] rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors">
+              className="btn-glow-outline">
               Contact Us
             </Link>
           </div>
