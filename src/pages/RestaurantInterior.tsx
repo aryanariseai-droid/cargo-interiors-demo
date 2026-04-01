@@ -3,6 +3,7 @@ import commercialImage from "@/assets/commercial-interior.jpg";
 import project3 from "@/assets/project-3.jpg";
 import SEOHead from "@/components/SEOHead";
 import { Section, CTAButton, SectionLabel, WA_LINK } from "@/components/Layout";
+import { serviceSchema } from "@/data/schemaMarkup";
 
 export default function RestaurantInterior() {
   return (

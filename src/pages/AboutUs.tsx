@@ -3,6 +3,7 @@ import showroomImage from "@/assets/showroom-interior.jpg";
 import officeImage from "@/assets/office-interior.jpg";
 import SEOHead from "@/components/SEOHead";
 import { Section, CTAButton, SectionLabel, WA_LINK } from "@/components/Layout";
+import { organizationSchema } from "@/data/schemaMarkup";
 
 export default function AboutUs() {
   return (

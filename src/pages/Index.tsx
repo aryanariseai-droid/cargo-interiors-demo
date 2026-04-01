@@ -29,6 +29,8 @@ export default function Index() {
         description="Looking for the best interior designer in Gurugram? Cargo Interiors specializes in office interior design, showroom interiors, and commercial spaces with 3D design and execution."
         canonical="https://cargo-interiors-demo.lovable.app/"
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       {!introComplete && <IntroAnimation onComplete={handleIntroComplete} />}
 
       {/* HERO */}

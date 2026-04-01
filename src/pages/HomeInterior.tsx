@@ -3,6 +3,7 @@ import homeImage from "@/assets/home-interior.jpg";
 import showroomImage from "@/assets/showroom-interior.jpg";
 import SEOHead from "@/components/SEOHead";
 import { Section, CTAButton, SectionLabel, WA_LINK } from "@/components/Layout";
+import { serviceSchema } from "@/data/schemaMarkup";
 
 export default function HomeInterior() {
   return (

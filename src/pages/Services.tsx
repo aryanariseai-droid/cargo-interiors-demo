@@ -5,6 +5,7 @@ import commercialImage from "@/assets/commercial-interior.jpg";
 import homeImage from "@/assets/home-interior.jpg";
 import SEOHead from "@/components/SEOHead";
 import { Section, CTAButton, SectionLabel, WA_LINK } from "@/components/Layout";
+import { serviceSchema } from "@/data/schemaMarkup";
 
 const services = [
   {
