@@ -8,8 +8,8 @@ export default function AboutUs() {
   return (
     <>
       <SEOHead
-        title="About Cargo Interiors | Best Interior Designer in Gurugram"
-        description="Learn about Cargo Interiors — Gurugram's leading interior design firm with 10+ years experience, 100+ projects, and 80+ professionals. Interior designer in Gurugram."
+        title="About Cargo Interiors | Interior Design Company Gurugram"
+        description="Cargo Interiors is a leading interior design company in Gurugram with 10+ years experience in office, showroom, and commercial interior design. 100+ projects delivered."
         canonical="https://cargo-interiors-demo.lovable.app/about-us"
       />
 
