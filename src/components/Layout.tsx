@@ -51,6 +51,7 @@ const NAV_LINKS = [
   { to: "/services", label: "Services" },
   { to: "/restaurant-interior", label: "Restaurant" },
   { to: "/home-interior", label: "Home Interior" },
+  { to: "/blog", label: "Blog" },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
