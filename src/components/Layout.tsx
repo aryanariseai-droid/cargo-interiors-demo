@@ -29,8 +29,7 @@ export function CTAButton({ children, className = "", href }: { children: React.
       href={href || WA_LINK}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-block bg-primary text-primary-foreground px-8 py-4 font-body text-sm font-semibold uppercase tracking-[0.2em] rounded-lg transition-all duration-300 ease-in-out hover:scale-[1.02] ${className}`}
-      style={{ boxShadow: "0 8px 20px rgba(0,0,0,0.25), 0 0 20px rgba(212,175,55,0.25)" }}
+      className={`btn-glow ${className}`}
     >
       {children}
     </a>
