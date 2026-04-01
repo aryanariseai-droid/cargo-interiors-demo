@@ -14,8 +14,8 @@ export default function Blog() {
   return (
     <>
       <SEOHead
-        title="Interior Design Blog | Tips & Ideas | Cargo Interiors Gurugram"
-        description="Explore expert interior design tips, trends, and project insights from Cargo Interiors — the best interior designer in Gurugram."
+        title="Interior Design Blog | Office & Showroom Tips Gurugram"
+        description="Explore expert tips on office interior design, showroom design ideas, and commercial interiors in Gurugram. Learn from Cargo Interiors."
         canonical="https://cargo-interiors-demo.lovable.app/blog"
       />
 

@@ -8,8 +8,8 @@ export default function HomeInterior() {
   return (
     <>
       <SEOHead
-        title="Home Interior Designer in Gurugram | Cargo Interiors"
-        description="Premium home interior design in Gurugram. Modular kitchens, bedroom design, living rooms & complete home renovation. 10+ years experience. Cargo Interiors."
+        title="Home Interior Design in Gurugram | Cargo Interiors"
+        description="Premium home interior design in Gurugram. Modular kitchens, living rooms, bedrooms & complete home renovation by the best interior designers near you."
         canonical="https://cargo-interiors-demo.lovable.app/home-interior"
       />
 

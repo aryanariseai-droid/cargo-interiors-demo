@@ -24,8 +24,8 @@ export default function Index() {
   return (
     <>
       <SEOHead
-        title="Best Interior Designer in Gurugram | Cargo Interiors"
-        description="Cargo Interiors — Best interior designer in Gurugram. 10+ years, 100+ projects. Premium showroom, office, restaurant & home interior design in Gurugram."
+        title="Office & Showroom Interior Designers in Gurugram | Cargo Interiors"
+        description="Looking for the best interior designer in Gurugram? Cargo Interiors specializes in office interior design, showroom interiors, and commercial spaces with 3D design and execution."
         canonical="https://cargo-interiors-demo.lovable.app/"
       />
       {!introComplete && <IntroAnimation onComplete={handleIntroComplete} />}

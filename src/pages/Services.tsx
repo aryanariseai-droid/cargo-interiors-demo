@@ -41,8 +41,8 @@ export default function Services() {
   return (
     <>
       <SEOHead
-        title="Interior Design Services in Gurugram | Cargo Interiors"
-        description="Complete interior design services in Gurugram — restaurant, café, home, office & showroom interiors. End-to-end design and execution by Cargo Interiors."
+        title="Commercial Interior Design in Gurugram | Interior Design Company"
+        description="Cargo Interiors provides commercial interior design in Gurugram for offices, showrooms, and retail spaces. Get complete turnkey interior solutions."
         canonical="https://cargo-interiors-demo.lovable.app/services"
       />
 

@@ -8,8 +8,8 @@ export default function RestaurantInterior() {
   return (
     <>
       <SEOHead
-        title="Restaurant Interior Designer in Gurugram | Cargo Interiors"
-        description="Expert restaurant & café interior design in Gurugram. Create stunning dining spaces that boost footfall. 10+ years experience, 100+ projects. Cargo Interiors."
+        title="Restaurant Interior Design Gurugram | Cargo Interiors"
+        description="Expert restaurant and café interior design in Gurugram. Create stunning dining spaces that boost footfall with turnkey design and execution solutions."
         canonical="https://cargo-interiors-demo.lovable.app/restaurant-interior"
       />
 
