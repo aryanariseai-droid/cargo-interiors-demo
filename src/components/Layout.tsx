@@ -29,8 +29,7 @@ export function CTAButton({ children, className = "", href }: { children: React.
       href={href || WA_LINK}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-block bg-primary text-primary-foreground px-8 py-4 font-body text-sm font-semibold uppercase tracking-[0.2em] rounded-lg transition-all duration-300 ease-in-out hover:scale-[1.02] ${className}`}
-      style={{ boxShadow: "0 8px 20px rgba(0,0,0,0.25), 0 0 20px rgba(212,175,55,0.25)" }}
+      className={`btn-glow ${className}`}
     >
       {children}
     </a>
@@ -80,7 +79,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-block border border-primary text-primary px-6 py-2 font-body text-xs uppercase tracking-[0.2em] hover:bg-primary hover:text-primary-foreground transition-colors"
+            className="hidden sm:inline-block btn-glow-outline !px-6 !py-2 !text-xs"
           >
             Book a Consultation
           </a>

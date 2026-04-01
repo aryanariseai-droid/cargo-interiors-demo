@@ -71,7 +71,7 @@ export default function Index() {
             <CTAButton>Book a Consultation</CTAButton>
             <a
               href="tel:+919050656162"
-              className="inline-block border border-primary text-primary px-8 py-4 font-body text-sm font-semibold uppercase tracking-[0.2em] rounded-lg transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
+              className="btn-glow-outline"
             >
               Call Now
             </a>
