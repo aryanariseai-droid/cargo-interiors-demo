@@ -51,6 +51,7 @@ const NAV_LINKS = [
   { to: "/services", label: "Services" },
   { to: "/restaurant-interior", label: "Restaurant" },
   { to: "/home-interior", label: "Home Interior" },
+  { to: "/blog", label: "Blog" },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -112,6 +113,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <h4 className="font-display font-bold mb-4 text-sm">Company</h4>
               <div className="space-y-2 text-muted-foreground text-sm font-body">
                 <Link to="/about-us" className="block hover:text-primary transition-colors">About Us</Link>
+                <Link to="/blog" className="block hover:text-primary transition-colors">Blog</Link>
                 <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="block hover:text-primary transition-colors">Book Consultation</a>
               </div>
             </div>
