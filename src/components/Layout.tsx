@@ -79,7 +79,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-block border border-primary text-primary px-6 py-2 font-body text-xs uppercase tracking-[0.2em] hover:bg-primary hover:text-primary-foreground transition-colors"
+            className="hidden sm:inline-block btn-glow-outline !px-6 !py-2 !text-xs"
           >
             Book a Consultation
           </a>
