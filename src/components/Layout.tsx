@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { Phone } from "lucide-react";
 
 const WA_LINK = "https://wa.me/919050656162?text=Hi%2C%20Cargo%20Interiors!%20I%20wanted%20to%20discuss%20about%20some%20interior%20designing%20project%2C%20Please%20reply.%20Thanks!";
 
