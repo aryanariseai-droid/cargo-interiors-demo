@@ -170,6 +170,11 @@ export const blogPosts: BlogPost[] = [
       { question: "What are the latest home interior design trends in Gurugram?", answer: "The top trends include smart home integration, sustainable materials, open floor plans with defined zones, and luxury kitchen and bathroom makeovers." },
       { question: "How much does home interior design cost in Gurugram?", answer: "Home interior design in Gurugram ranges from ₹1,000 to ₹3,000 per sq. ft. depending on the scope, materials, and level of customization required." },
     ],
+    internalLink: {
+      anchorText: "interior designer in Gurugram",
+      url: "/office-interior-design-gurgaon",
+      paragraphIndex: 0,
+    },
   },
   {
     slug: "showroom-interior-design-gurugram",
