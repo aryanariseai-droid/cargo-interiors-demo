@@ -130,6 +130,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           <div className="section-divider mb-8" />
+          <p className="text-muted-foreground text-sm font-body leading-relaxed mb-8">
+            Cargo Interiors is a leading office and showroom interior design company in Gurgaon (Gurugram), specializing in high-performance commercial spaces. We design offices and retail showrooms that enhance business growth through smart layouts, premium aesthetics, and precise execution.
+          </p>
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-muted-foreground text-xs font-body">© 2025 Cargo Interiors. All rights reserved.</p>
             <p className="text-muted-foreground text-xs font-body">ISO Certified · MSME Registered · Make in India</p>
