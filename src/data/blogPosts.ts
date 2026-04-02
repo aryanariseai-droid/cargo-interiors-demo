@@ -218,6 +218,11 @@ export const blogPosts: BlogPost[] = [
       { question: "How much does showroom interior design cost in Gurugram?", answer: "Showroom interior design costs in Gurugram range from ₹1,200 to ₹3,500 per sq. ft. based on the brand positioning, materials, and design complexity." },
       { question: "Can Cargo Interiors design showrooms outside Gurugram?", answer: "Yes, while based in Gurugram, we take on showroom design projects across Delhi NCR, Noida, Faridabad, and other cities in India." },
     ],
+    internalLink: {
+      anchorText: "showroom interior design in Gurugram",
+      url: "/showroom-interior-design-gurgaon",
+      paragraphIndex: 0,
+    },
   },
   {
     slug: "commercial-interior-design-tips-gurugram",
