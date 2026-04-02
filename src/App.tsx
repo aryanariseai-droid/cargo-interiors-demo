@@ -7,6 +7,8 @@ import Layout from "@/components/Layout";
 import Index from "./pages/Index.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import Services from "./pages/Services.tsx";
+import OfficeInterior from "./pages/OfficeInterior.tsx";
+import ShowroomInterior from "./pages/ShowroomInterior.tsx";
 import RestaurantInterior from "./pages/RestaurantInterior.tsx";
 import HomeInterior from "./pages/HomeInterior.tsx";
 import Blog from "./pages/Blog.tsx";
