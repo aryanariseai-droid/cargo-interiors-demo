@@ -72,6 +72,124 @@ export default function OfficeInterior() {
         </div>
       </section>
 
+      {/* DETAILED CONTENT BLOCK */}
+      <Section className="py-24 md:py-32 border-b border-border">
+        <div className="max-w-4xl mx-auto px-6">
+          <p className="text-muted-foreground font-body text-lg leading-relaxed mb-12">
+            Looking for the best office interior design in Gurgaon? Cargo Interiors specializes in creating high-performance workspaces that boost productivity, impress clients, and reflect your brand identity. From startups to corporate offices, we design spaces that don't just look premium — they drive results.
+          </p>
+
+          <h2 className="font-display text-2xl md:text-4xl font-bold mb-6">
+            Why Office Interior Design <span className="text-gradient-gold">Matters</span>
+          </h2>
+          <p className="text-muted-foreground font-body leading-relaxed mb-4">
+            Your office is more than just a workspace — it's a business asset.
+          </p>
+          <p className="text-muted-foreground font-body leading-relaxed mb-2">A well-designed office can:</p>
+          <ul className="space-y-3 mb-12">
+            {[
+              "Increase employee productivity and focus",
+              "Improve team collaboration and workflow",
+              "Create a strong first impression on clients",
+              "Enhance brand identity and professionalism",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3">
+                <CheckCircle className="text-primary mt-0.5 flex-shrink-0" size={20} />
+                <span className="text-muted-foreground font-body text-sm leading-relaxed">{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-muted-foreground font-body leading-relaxed mb-12">
+            At Cargo Interiors, we design offices that are engineered for business growth.
+          </p>
+
+          <h2 className="font-display text-2xl md:text-4xl font-bold mb-6">
+            Our Office Interior Design <span className="text-gradient-gold">Process</span>
+          </h2>
+          <p className="text-muted-foreground font-body leading-relaxed mb-8">
+            We follow a structured, result-driven approach:
+          </p>
+          <div className="space-y-8 mb-12">
+            {[
+              { step: "1", title: "Requirement Analysis", desc: "We understand your business, team size, workflow, and goals." },
+              { step: "2", title: "3D Design & Visualization", desc: "We create realistic 3D designs so you can see your office before execution." },
+              { step: "3", title: "Space Planning", desc: "Every square foot is optimized for efficiency and movement." },
+              { step: "4", title: "Material & Design Selection", desc: "Premium finishes, lighting, furniture, and layout planning." },
+              { step: "5", title: "Execution", desc: "Our expert team ensures the final result matches the design exactly." },
+            ].map((item) => (
+              <div key={item.step} className="flex gap-6 items-start">
+                <span className="text-primary font-display text-2xl font-bold opacity-40">{item.step}</span>
+                <div>
+                  <h3 className="font-display text-lg font-bold mb-1">{item.title}</h3>
+                  <p className="text-muted-foreground font-body text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="font-display text-2xl md:text-4xl font-bold mb-6">
+            Types of Office Interiors <span className="text-gradient-gold">We Design</span>
+          </h2>
+          <ul className="space-y-3 mb-4">
+            {[
+              "Corporate Offices",
+              "Startup Offices",
+              "Co-working Spaces",
+              "Executive Cabins",
+              "Reception Areas",
+              "Conference Rooms",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3">
+                <CheckCircle className="text-primary mt-0.5 flex-shrink-0" size={20} />
+                <span className="text-muted-foreground font-body text-sm leading-relaxed">{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-muted-foreground font-body leading-relaxed mb-12">
+            We tailor every design based on your business needs.
+          </p>
+
+          <h2 className="font-display text-2xl md:text-4xl font-bold mb-6">
+            Benefits of Choosing <span className="text-gradient-gold">Cargo Interiors</span>
+          </h2>
+          <ul className="space-y-3 mb-12">
+            {[
+              "100+ High-Value Projects Delivered",
+              "80+ Skilled Professionals",
+              "15+ Cities Served Across India",
+              "Premium Quality Execution",
+              "On-Time Project Delivery",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3">
+                <CheckCircle className="text-primary mt-0.5 flex-shrink-0" size={20} />
+                <span className="text-muted-foreground font-body text-sm leading-relaxed">{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-muted-foreground font-body leading-relaxed mb-12">
+            We don't just design offices — we create business environments.
+          </p>
+
+          <h2 className="font-display text-2xl md:text-4xl font-bold mb-6">
+            Office Interior Design in <span className="text-gradient-gold">Gurgaon & Gurugram</span>
+          </h2>
+          <p className="text-muted-foreground font-body leading-relaxed mb-12">
+            Cargo Interiors is a leading office interior design company in Gurgaon (Gurugram), serving businesses across Delhi NCR. Whether you need a modern workspace, a luxury corporate office, or a functional startup setup — we deliver designs that perform.
+          </p>
+
+          <h2 className="font-display text-2xl md:text-4xl font-bold mb-6">
+            Let's Design Your <span className="text-gradient-gold">Office</span>
+          </h2>
+          <p className="text-muted-foreground font-body leading-relaxed mb-8">
+            If you're searching for office interior designers in Gurgaon or looking for the best office interior design company near you, Cargo Interiors is here to help.
+          </p>
+          <p className="text-muted-foreground font-body leading-relaxed mb-10">
+            👉 Book a consultation today and transform your workspace into a powerful business asset.
+          </p>
+          <CTAButton>Book a Free Consultation</CTAButton>
+        </div>
+      </Section>
+
       {/* TRUST STATS */}
       <section className="py-12 bg-background border-b border-border">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
