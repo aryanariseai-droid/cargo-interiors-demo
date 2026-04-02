@@ -47,10 +47,10 @@ export function SectionLabel({ children }: { children: React.ReactNode }) {
 
 const NAV_LINKS = [
   { to: "/", label: "Home" },
+  { to: "/office-interior-design-gurgaon", label: "Office Interiors Gurgaon" },
+  { to: "/showroom-interior-design-gurgaon", label: "Showroom Interiors Gurgaon" },
+  { to: "/commercial-interior-design-gurgaon", label: "Commercial Interiors Gurgaon" },
   { to: "/about-us", label: "About" },
-  { to: "/services", label: "Services" },
-  { to: "/restaurant-interior", label: "Restaurant" },
-  { to: "/home-interior", label: "Home Interior" },
   { to: "/blog", label: "Blog" },
 ];
 
