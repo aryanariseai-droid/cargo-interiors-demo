@@ -1,3 +1,9 @@
+export interface BlogInternalLink {
+  anchorText: string;
+  url: string;
+  paragraphIndex: number; // index in content array where the link should be injected
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -11,6 +17,7 @@ export interface BlogPost {
   author: string;
   content: BlogSection[];
   faq?: { question: string; answer: string }[];
+  internalLink?: BlogInternalLink;
 }
 
 export type BlogCategory = "Office Interior" | "Showroom Interior" | "Commercial Design" | "Interior Design Tips";
