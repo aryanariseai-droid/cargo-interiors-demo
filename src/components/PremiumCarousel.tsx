@@ -8,7 +8,29 @@ interface PremiumCarouselProps {
   interval?: number;
 }
 
+function usePreloadImages(srcs: string[]) {
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    let cancelled = false;
+    const promises = srcs.map(
+      (src) =>
+        new Promise<void>((resolve) => {
+          const img = new Image();
+          img.decoding = "sync";
+          img.src = src;
+          if (img.complete) { resolve(); return; }
+          img.onload = () => resolve();
+          img.onerror = () => resolve();
+        })
+    );
+    Promise.all(promises).then(() => { if (!cancelled) setReady(true); });
+    return () => { cancelled = true; };
+  }, [srcs]);
+  return ready;
+}
+
 export default function PremiumCarousel({ images, alts, interval = 3000 }: PremiumCarouselProps) {
+  const ready = usePreloadImages(images);
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
   const timerRef = useRef<ReturnType<typeof setInterval>>();
@@ -23,9 +45,10 @@ export default function PremiumCarousel({ images, alts, interval = 3000 }: Premi
   }, [images.length, interval]);
 
   useEffect(() => {
+    if (!ready) return;
     resetTimer();
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
-  }, [resetTimer]);
+  }, [resetTimer, ready]);
 
   const goTo = useCallback((dir: 1 | -1) => {
     setDirection(dir);
@@ -44,6 +67,11 @@ export default function PremiumCarousel({ images, alts, interval = 3000 }: Premi
     center: { x: 0, opacity: 1 },
     exit: (d: number) => ({ x: d > 0 ? "-100%" : "100%", opacity: 0 }),
   };
+
+  if (!ready) {
+    // Reserve space but show nothing — no skeleton, no spinner
+    return <div className="w-full aspect-[4/5]" />;
+  }
 
   return (
     <div className="relative group">
@@ -64,6 +92,8 @@ export default function PremiumCarousel({ images, alts, interval = 3000 }: Premi
             animate="center"
             exit="exit"
             transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
+            loading="eager"
+            decoding="sync"
             width={1280}
             height={1600}
           />
