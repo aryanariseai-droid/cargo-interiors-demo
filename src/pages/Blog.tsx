@@ -4,6 +4,61 @@ import SEOHead from "@/components/SEOHead";
 import { Section, SectionLabel } from "@/components/Layout";
 import { blogPosts, BLOG_CATEGORIES, type BlogCategory } from "@/data/blogPosts";
 
+function FeaturedSection() {
+  const featured = blogPosts.filter((p) => p.featured);
+  if (featured.length === 0) return null;
+
+  return (
+    <Section className="px-6 pb-12">
+      <div className="max-w-6xl mx-auto">
+        <SectionLabel>Expert Guides</SectionLabel>
+        <h2 className="font-display text-2xl md:text-3xl font-bold mb-8 text-center">
+          Expert Guides for Office & Showroom <span className="text-primary">Interiors</span>
+        </h2>
+        <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8">
+          {featured.map((post) => (
+            <Link
+              key={post.slug}
+              to={`/blog/${post.slug}`}
+              className="group bg-card border-2 border-primary/30 rounded-xl overflow-hidden hover:border-primary transition-all duration-300 shadow-[0_0_20px_hsl(var(--primary)/0.1)]"
+            >
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="aspect-[16/10] md:aspect-auto overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.imageAlt}
+                    loading="eager"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-8 flex flex-col justify-center">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-primary font-body text-[10px] uppercase tracking-[0.2em] bg-primary/10 px-3 py-1 rounded-full">
+                      Featured
+                    </span>
+                    <span className="text-primary font-body text-[10px] uppercase tracking-[0.2em] bg-primary/10 px-3 py-1 rounded-full">
+                      {post.category}
+                    </span>
+                  </div>
+                  <h3 className="font-display text-xl md:text-2xl font-bold mb-3 group-hover:text-primary transition-colors leading-snug">
+                    {post.title}
+                  </h3>
+                  <p className="text-muted-foreground font-body text-sm leading-relaxed mb-4 line-clamp-3">
+                    {post.excerpt}
+                  </p>
+                  <span className="inline-block text-primary font-body text-xs uppercase tracking-[0.15em] font-semibold">
+                    Read Full Guide →
+                  </span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </Section>
+  );
+}
+
 export default function Blog() {
   const [activeCategory, setActiveCategory] = useState<BlogCategory | "All">("All");
 
@@ -31,6 +86,9 @@ export default function Blog() {
           </p>
         </div>
       </section>
+
+      {/* Featured Section */}
+      <FeaturedSection />
 
       {/* Categories */}
       <section className="px-6 pb-8">
