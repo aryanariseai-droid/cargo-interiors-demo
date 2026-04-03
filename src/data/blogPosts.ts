@@ -18,6 +18,7 @@ export interface BlogPost {
   content: BlogSection[];
   faq?: { question: string; answer: string }[];
   internalLink?: BlogInternalLink;
+  featured?: boolean;
 }
 
 export type BlogCategory = "Office Interior" | "Showroom Interior" | "Commercial Design" | "Interior Design Tips";
