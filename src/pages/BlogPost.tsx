@@ -43,15 +43,12 @@ function ShareButtons({ url, title }: { url: string; title: string }) {
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
-
-  // Handle redirects for merged/deleted blog slugs
   const redirectSlug = slug ? BLOG_REDIRECTS[slug] : undefined;
-  if (redirectSlug) return <Navigate to={`/blog/${redirectSlug}`} replace />;
-
-  const post = blogPosts.find((p) => p.slug === slug);
+  const post = redirectSlug ? undefined : blogPosts.find((p) => p.slug === slug);
 
   useEffect(() => { window.scrollTo(0, 0); }, [slug]);
 
+  if (redirectSlug) return <Navigate to={`/blog/${redirectSlug}`} replace />;
   if (!post) return <Navigate to="/blog" replace />;
 
   const postUrl = `https://cargo-interiors-demo.lovable.app/blog/${post.slug}`;
