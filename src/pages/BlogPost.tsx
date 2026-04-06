@@ -2,7 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SEOHead from "@/components/SEOHead";
 import { Section, CTAButton, SectionLabel, WA_LINK } from "@/components/Layout";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts, BLOG_REDIRECTS } from "@/data/blogPosts";
 import type { BlogInternalLink } from "@/data/blogPosts";
 
 const shareButtonClass =
