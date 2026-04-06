@@ -2,7 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SEOHead from "@/components/SEOHead";
 import { Section, CTAButton, SectionLabel, WA_LINK } from "@/components/Layout";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts, BLOG_REDIRECTS } from "@/data/blogPosts";
 import type { BlogInternalLink } from "@/data/blogPosts";
 
 const shareButtonClass =
@@ -43,10 +43,12 @@ function ShareButtons({ url, title }: { url: string; title: string }) {
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
-  const post = blogPosts.find((p) => p.slug === slug);
+  const redirectSlug = slug ? BLOG_REDIRECTS[slug] : undefined;
+  const post = redirectSlug ? undefined : blogPosts.find((p) => p.slug === slug);
 
   useEffect(() => { window.scrollTo(0, 0); }, [slug]);
 
+  if (redirectSlug) return <Navigate to={`/blog/${redirectSlug}`} replace />;
   if (!post) return <Navigate to="/blog" replace />;
 
   const postUrl = `https://cargo-interiors-demo.lovable.app/blog/${post.slug}`;
