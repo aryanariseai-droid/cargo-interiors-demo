@@ -133,6 +133,9 @@ export default function HomeInterior() {
               View All Services
             </Link>
           </div>
+          <p className="text-muted-foreground font-body text-sm mt-8">
+            Looking for a professional <Link to="/home-interior-designer-gurgaon" className="text-primary hover:underline font-medium">home interior designer in Gurgaon</Link>? Check out our portfolio, pricing, and client reviews.
+          </p>
         </div>
       </section>
     </>
