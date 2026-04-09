@@ -233,6 +233,9 @@ export default function ShowroomInterior() {
               Call Now →
             </a>
           </div>
+          <p className="text-muted-foreground font-body text-sm mt-8">
+            Looking for a professional <Link to="/showroom-interior-designer-gurgaon" className="text-primary hover:underline font-medium">showroom interior designer in Gurgaon</Link>? Visit our dedicated page for portfolio, pricing, and testimonials.
+          </p>
         </div>
       </section>
     </>

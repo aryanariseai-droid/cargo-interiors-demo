@@ -351,6 +351,9 @@ export default function OfficeInterior() {
               Call Now →
             </a>
           </div>
+          <p className="text-muted-foreground font-body text-sm mt-8">
+            Looking for a professional <Link to="/office-interior-designer-gurgaon" className="text-primary hover:underline font-medium">office interior designer in Gurgaon</Link>? Explore our dedicated service page for pricing, portfolio, and FAQs.
+          </p>
         </div>
       </section>
     </>
