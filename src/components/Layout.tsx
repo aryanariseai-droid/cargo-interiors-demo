@@ -51,6 +51,7 @@ const NAV_LINKS = [
   { to: "/office-interior-designer-gurgaon", label: "Office Designer" },
   { to: "/showroom-interior-designer-gurgaon", label: "Showroom Designer" },
   { to: "/home-interior-designer-gurgaon", label: "Home Designer" },
+  { to: "/our-portfolio", label: "Portfolio" },
   { to: "/about-us", label: "About" },
   { to: "/blog", label: "Blog" },
 ];
