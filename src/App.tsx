@@ -18,6 +18,10 @@ import OfficeInteriorDesigner from "./pages/OfficeInteriorDesigner.tsx";
 import ShowroomInteriorDesigner from "./pages/ShowroomInteriorDesigner.tsx";
 import HomeInteriorDesigner from "./pages/HomeInteriorDesigner.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import Portfolio from "./pages/Portfolio.tsx";
+import PortfolioHome from "./pages/PortfolioHome.tsx";
+import PortfolioOffice from "./pages/PortfolioOffice.tsx";
+import PortfolioShowroom from "./pages/PortfolioShowroom.tsx";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +34,10 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/our-portfolio" element={<Portfolio />} />
+            <Route path="/our-portfolio/home-interior-designer-in-gurugram" element={<PortfolioHome />} />
+            <Route path="/our-portfolio/office-interior-designer-in-gurugram" element={<PortfolioOffice />} />
+            <Route path="/our-portfolio/showroom-interior-designer-in-gurugram" element={<PortfolioShowroom />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/services" element={<Services />} />
             <Route path="/office-interior-design-gurgaon" element={<OfficeInterior />} />
