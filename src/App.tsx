@@ -19,6 +19,8 @@ import ShowroomInteriorDesigner from "./pages/ShowroomInteriorDesigner.tsx";
 import HomeInteriorDesigner from "./pages/HomeInteriorDesigner.tsx";
 import BestInteriorDesignerGurugram from "./pages/BestInteriorDesignerGurugram.tsx";
 import BestInteriorDesignerNearMe from "./pages/BestInteriorDesignerNearMe.tsx";
+import HouseConstructionGurugram from "./pages/HouseConstructionGurugram.tsx";
+import HomeBuildersGurugram from "./pages/HomeBuildersGurugram.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Portfolio from "./pages/Portfolio.tsx";
 import PortfolioHome from "./pages/PortfolioHome.tsx";
@@ -53,6 +55,8 @@ const App = () => (
             <Route path="/home-interior-designer-gurgaon" element={<HomeInteriorDesigner />} />
             <Route path="/best-interior-designer-in-gurugram" element={<BestInteriorDesignerGurugram />} />
             <Route path="/best-interior-designer-near-me-gurugram" element={<BestInteriorDesignerNearMe />} />
+            <Route path="/house-construction-in-gurugram" element={<HouseConstructionGurugram />} />
+            <Route path="/home-builders-and-constructions-in-gurugram" element={<HomeBuildersGurugram />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
