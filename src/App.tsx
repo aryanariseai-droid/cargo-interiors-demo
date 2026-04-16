@@ -22,6 +22,7 @@ import BestInteriorDesignerNearMe from "./pages/BestInteriorDesignerNearMe.tsx";
 import HouseConstructionGurugram from "./pages/HouseConstructionGurugram.tsx";
 import HomeBuildersGurugram from "./pages/HomeBuildersGurugram.tsx";
 import ConstructionCostGurugram from "./pages/ConstructionCostGurugram.tsx";
+import CostCalculator from "./pages/CostCalculator.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Portfolio from "./pages/Portfolio.tsx";
 import PortfolioHome from "./pages/PortfolioHome.tsx";
