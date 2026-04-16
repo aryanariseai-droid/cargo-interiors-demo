@@ -124,23 +124,23 @@ export default function CostCalculator() {
                     onChange={(e) => setArea(e.target.value.replace(/[^0-9,.]/g, ""))}
                     className="flex-1 bg-background border-border text-foreground placeholder:text-muted-foreground"
                   />
-                  <div className="flex rounded-md border border-border overflow-hidden shrink-0">
+                  <div className="flex rounded-md border border-[hsl(var(--gold)/0.4)] overflow-hidden shrink-0">
                     <button
                       onClick={() => setUnit("sqft")}
-                      className={`px-3 py-2 text-sm font-medium transition-colors ${
+                      className={`px-4 py-2 text-sm font-semibold transition-all ${
                         unit === "sqft"
-                          ? "bg-[hsl(var(--gold))] text-background"
-                          : "bg-background text-muted-foreground hover:text-foreground"
+                          ? "bg-white text-black shadow-inner"
+                          : "bg-transparent text-foreground/70 hover:text-foreground hover:bg-white/5"
                       }`}
                     >
                       Sq Ft
                     </button>
                     <button
                       onClick={() => setUnit("sqm")}
-                      className={`px-3 py-2 text-sm font-medium transition-colors ${
+                      className={`px-4 py-2 text-sm font-semibold transition-all ${
                         unit === "sqm"
-                          ? "bg-[hsl(var(--gold))] text-background"
-                          : "bg-background text-muted-foreground hover:text-foreground"
+                          ? "bg-white text-black shadow-inner"
+                          : "bg-transparent text-foreground/70 hover:text-foreground hover:bg-white/5"
                       }`}
                     >
                       Sq M
@@ -175,12 +175,12 @@ export default function CostCalculator() {
                   aria-label="Chat with Cargo Interior on WhatsApp"
                   className="flex-1"
                 >
-                  <Button className="w-full bg-[hsl(var(--gold))] hover:bg-[hsl(var(--gold-light))] text-background font-semibold gap-2">
+                  <Button className="w-full bg-[hsl(var(--gold))] hover:bg-[hsl(var(--gold-light))] text-black font-semibold gap-2 shadow-[0_0_20px_hsl(var(--gold)/0.3)] hover:shadow-[0_0_28px_hsl(var(--gold)/0.45)] transition-all">
                     <MessageCircle className="w-4 h-4" /> Talk to an Expert
                   </Button>
                 </a>
                 <a href="tel:+919050656162" aria-label="Call Cargo Interior" className="flex-1">
-                  <Button variant="outline" className="w-full border-[hsl(var(--gold)/0.3)] text-foreground hover:bg-[hsl(var(--gold)/0.1)] gap-2">
+                  <Button className="w-full bg-white text-black font-semibold gap-2 hover:bg-white/90 shadow-sm transition-all">
                     <Phone className="w-4 h-4" /> Call Now
                   </Button>
                 </a>
