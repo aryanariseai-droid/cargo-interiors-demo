@@ -8,6 +8,7 @@ export interface LocationProject {
   title: string;
   description: string;
   image: string;
+  href?: string;
 }
 
 export interface LocationPageData {
@@ -109,25 +110,44 @@ export default function LocationLandingPage({ data }: { data: LocationPageData }
             <p className="text-muted-foreground font-body max-w-3xl mx-auto leading-relaxed">{data.projectsIntro}</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {data.projects.map((p) => (
-              <article key={p.title} className="group border border-border bg-background overflow-hidden">
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <img
-                    src={p.image}
-                    alt={`Before and after — ${p.title}`}
-                    loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute top-3 left-3 bg-background/90 backdrop-blur px-2.5 py-1 text-[10px] uppercase tracking-widest text-primary font-body">
-                    Before / After
+            {data.projects.map((p) => {
+              const inner = (
+                <>
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img
+                      src={p.image}
+                      alt={`Before and after — ${p.title}`}
+                      loading="lazy"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute top-3 left-3 bg-background/90 backdrop-blur px-2.5 py-1 text-[10px] uppercase tracking-widest text-primary font-body">
+                      Before / After
+                    </div>
                   </div>
-                </div>
-                <div className="p-5">
-                  <h3 className="font-display text-base font-bold mb-2">{p.title}</h3>
-                  <p className="text-muted-foreground font-body text-sm leading-relaxed">{p.description}</p>
-                </div>
-              </article>
-            ))}
+                  <div className="p-5">
+                    <h3 className="font-display text-base font-bold mb-2">{p.title}</h3>
+                    <p className="text-muted-foreground font-body text-sm leading-relaxed">{p.description}</p>
+                    {p.href && (
+                      <span className="mt-3 inline-flex items-center gap-1 text-xs text-primary font-body uppercase tracking-widest">
+                        View Case Study <ArrowRight size={12} />
+                      </span>
+                    )}
+                  </div>
+                </>
+              );
+              const baseCls = "group block border border-border bg-background overflow-hidden transition-all duration-300";
+              return p.href ? (
+                <Link
+                  key={p.title}
+                  to={p.href}
+                  className={`${baseCls} hover:border-primary/50 hover:shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.35)] hover:-translate-y-0.5`}
+                >
+                  {inner}
+                </Link>
+              ) : (
+                <article key={p.title} className={baseCls}>{inner}</article>
+              );
+            })}
           </div>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/our-portfolio" className="btn-glow !px-7 !py-3 !text-xs inline-flex items-center gap-2">
