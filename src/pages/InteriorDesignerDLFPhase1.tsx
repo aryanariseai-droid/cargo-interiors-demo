@@ -25,9 +25,9 @@ export default function InteriorDesignerDLFPhase1() {
         projectsIntro:
           "A snapshot of recent work delivered across DLF Phase 1 — each project documented with a before/after walkthrough during your consultation.",
         projects: [
-          { title: "DLF Phase 1 Luxury Apartment Renovation", description: "A tired 4BHK builder floor reworked into a warm, gallery-style residence with travertine flooring and oak veneer joinery.", image: home },
+          { title: "DLF Phase 1 Luxury Apartment Renovation", description: "A tired 4BHK builder floor reworked into a warm, gallery-style residence with travertine flooring and oak veneer joinery.", image: home, href: "/apartment-renovation-in-dlf-phase-1-gurgaon" },
           { title: "Independent Villa Redesign – U Block", description: "Full structural and interior overhaul of a 6,200 sq ft villa, including double-height living and a basement lounge.", image: showroom },
-          { title: "Founder's Studio Office – E Block", description: "A 1,400 sq ft floor converted into a hybrid home-office for a fashion entrepreneur, with a private client viewing room.", image: office },
+          { title: "Founder's Studio Office – E Block", description: "A 1,400 sq ft floor converted into a hybrid home-office for a fashion entrepreneur, with a private client viewing room.", image: office, href: "/office-interior-design-e-block-dlf-phase-1-gurgaon" },
         ],
         portfolioContextLabel: "View Home Interiors",
         portfolioContextHref: "/our-portfolio/home-interior-designer-in-gurugram",
