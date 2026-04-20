@@ -193,10 +193,11 @@ export default function BlogPost() {
                     {block.alt && <figcaption className="text-muted-foreground text-xs font-body mt-2 text-center">{block.alt}</figcaption>}
                   </figure>
                 );
-              default:
-                return null;
-            }
-          })}
+                default:
+                  return null;
+              }
+            });
+          })()}
         </article>
       </Section>
 
