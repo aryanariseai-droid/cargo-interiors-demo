@@ -193,6 +193,38 @@ export default function BlogPost() {
                     {block.alt && <figcaption className="text-muted-foreground text-xs font-body mt-2 text-center">{block.alt}</figcaption>}
                   </figure>
                 );
+              case "table":
+                return (
+                  <div key={i} className="my-8 overflow-x-auto rounded-xl border border-border">
+                    <table className="w-full text-sm font-body">
+                      {block.headers && block.headers.length > 0 && (
+                        <thead className="bg-primary/10">
+                          <tr>
+                            {block.headers.map((h, hi) => (
+                              <th
+                                key={hi}
+                                className="text-left px-4 py-3 text-foreground font-semibold border-b border-border whitespace-nowrap"
+                              >
+                                {h}
+                              </th>
+                            ))}
+                          </tr>
+                        </thead>
+                      )}
+                      <tbody>
+                        {block.rows?.map((row, ri) => (
+                          <tr key={ri} className="border-b border-border last:border-0 hover:bg-muted/30 transition-colors">
+                            {row.cells.map((cell, ci) => (
+                              <td key={ci} className="px-4 py-3 text-muted-foreground align-top leading-relaxed">
+                                {cell}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                );
                 default:
                   return null;
               }
