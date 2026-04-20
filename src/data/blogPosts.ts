@@ -29,12 +29,20 @@ export interface BlogPost {
 
 export type BlogCategory = "Office Interior" | "Showroom Interior" | "Commercial Design" | "Interior Design Tips";
 
+export interface BlogTableRow {
+  cells: string[];
+}
+
 export interface BlogSection {
-  type: "paragraph" | "heading" | "subheading" | "list" | "image";
+  type: "paragraph" | "heading" | "subheading" | "list" | "image" | "table";
   text?: string;
   items?: string[];
   src?: string;
   alt?: string;
+  /** Table headers — used when type === "table" */
+  headers?: string[];
+  /** Table rows — used when type === "table" */
+  rows?: BlogTableRow[];
 }
 
 export const BLOG_CATEGORIES: BlogCategory[] = [
@@ -145,6 +153,7 @@ export const blogPosts: BlogPost[] = [
       { type: "paragraph", text: "Cargo Interiors aapko end-to-end office interior design solutions deta hai — 3D visualization se lekar final execution tak. Chahe startup workspace ho ya corporate headquarters, hum aapke vision ko reality me convert karte hain. Aaj hi free consultation book karo." },
       { type: "paragraph", text: "Before finalising scope, most clients prefer a quick ballpark figure. Try our interior cost calculator to estimate your per-sq-ft budget in under a minute — useful for comparing quotes from any Gurgaon vendor." },
       { type: "paragraph", text: "If pricing is your next big question, our detailed office interior design cost in Gurgaon guide breaks down basic, mid-range and premium tiers with real project examples." },
+      { type: "paragraph", text: "Planning a home alongside the office? Our 2BHK interior design cost in Gurgaon guide gives a clear 2026 price range for full-home interiors." },
     ],
     faq: [
       { question: "Gurgaon me office interior design ka best layout kaunsa hai?", answer: "Hybrid layout — jo open workstations ko private focus pods aur collaboration zones ke saath combine karta hai — Gurgaon ke modern offices me sabse effective hai." },
@@ -161,6 +170,7 @@ export const blogPosts: BlogPost[] = [
     internalLinks: [
       { anchorText: "interior cost calculator", url: "/interior-design-cost-calculator-gurugram" },
       { anchorText: "office interior design cost in Gurgaon", url: "/blog/office-interior-design-cost-gurgaon" },
+      { anchorText: "2BHK interior design cost in Gurgaon", url: "/blog/2bhk-interior-design-cost-in-gurgaon" },
     ],
   },
 
@@ -240,6 +250,7 @@ export const blogPosts: BlogPost[] = [
       { type: "paragraph", text: "Cargo Interiors aapko end-to-end office interior design solutions deta hai — consultation se lekar final handover tak. 100+ projects delivered, 80+ professionals aur har budget ke liye tailored solutions. Aaj hi free consultation book karo aur apne office ka detailed cost estimate lo." },
       { type: "paragraph", text: "Ek quick number chahiye before consultation? Try our interior cost calculator — area aur tier select karo aur indicative per sq ft range mil jayega in seconds." },
       { type: "paragraph", text: "Cost ke saath layout aur trends bhi samajhna chahte ho? Hamara detailed office interior design Gurgaon guide layouts, 2026 trends aur common mistakes cover karta hai." },
+      { type: "paragraph", text: "Ghar ka interior bhi plan kar rahe ho? Hamara 2BHK interior design cost in Gurgaon guide full-home pricing tiers aur inclusions clearly explain karta hai." },
     ],
     faq: [
       { question: "Gurgaon me office interior design ki average cost kitni hai?", answer: "Basic interiors ₹1,500 per sq ft se shuru hote hain, mid-range ₹2,500–₹4,000 aur premium ₹4,000+ per sq ft tak jaata hai." },
@@ -256,6 +267,7 @@ export const blogPosts: BlogPost[] = [
     internalLinks: [
       { anchorText: "interior cost calculator", url: "/interior-design-cost-calculator-gurugram" },
       { anchorText: "office interior design Gurgaon guide", url: "/blog/office-interior-design-gurgaon-guide" },
+      { anchorText: "2BHK interior design cost in Gurgaon", url: "/blog/2bhk-interior-design-cost-in-gurgaon" },
     ],
   },
 
@@ -296,6 +308,7 @@ export const blogPosts: BlogPost[] = [
       { type: "paragraph", text: "From concept development to final execution, we ensure every restaurant project is delivered on time and within budget. Our portfolio includes fine dining establishments, casual cafés, cloud kitchens, and QSR outlets throughout the NCR region. Contact Cargo Interiors today to transform your restaurant vision into reality." },
       { type: "paragraph", text: "Planning the budget side first? Use our interior cost calculator to get an indicative per-sq-ft range before you finalise the brief with any designer in Gurgaon." },
       { type: "paragraph", text: "If your project also involves a retail-style display zone, our showroom interior design in Gurugram guide covers space planning, lighting and material selection in depth." },
+      { type: "paragraph", text: "Working on your home alongside the restaurant project? Check our 2BHK interior design cost in Gurgaon guide for clear 2026 pricing tiers." },
     ],
     faq: [
       { question: "How much does restaurant interior design cost in Gurugram?", answer: "Restaurant interior design in Gurugram typically costs between ₹1,500 to ₹4,000 per sq. ft. depending on the theme, materials, and complexity of the design." },
@@ -309,6 +322,7 @@ export const blogPosts: BlogPost[] = [
     internalLinks: [
       { anchorText: "interior cost calculator", url: "/interior-design-cost-calculator-gurugram" },
       { anchorText: "showroom interior design in Gurugram", url: "/blog/showroom-interior-design-gurugram" },
+      { anchorText: "2BHK interior design cost in Gurgaon", url: "/blog/2bhk-interior-design-cost-in-gurgaon" },
     ],
   },
 
@@ -400,6 +414,7 @@ export const blogPosts: BlogPost[] = [
       { type: "paragraph", text: "Ready to transform your showroom in Gurugram? Cargo Interiors delivers end-to-end showroom interior design services with guaranteed quality and timely completion. Contact us for a free site visit and design consultation." },
       { type: "paragraph", text: "Want a quick budget benchmark before scoping the project? Try our interior cost calculator for an indicative per-sq-ft range tailored to your area." },
       { type: "paragraph", text: "If your goal is sales lift, also read our showroom design ideas to boost sales in Gurgaon — it covers retail psychology, layout flow and conversion-focused design." },
+      { type: "paragraph", text: "Planning your home interiors in parallel? Our 2BHK interior design cost in Gurgaon guide gives a transparent 2026 pricing breakdown for full-home projects." },
     ],
     faq: [
       { question: "How much does showroom interior design cost in Gurugram?", answer: "Showroom interior design costs in Gurugram range from ₹1,200 to ₹3,500 per sq. ft. based on the brand positioning, materials, and design complexity." },
@@ -413,6 +428,7 @@ export const blogPosts: BlogPost[] = [
     internalLinks: [
       { anchorText: "interior cost calculator", url: "/interior-design-cost-calculator-gurugram" },
       { anchorText: "showroom design ideas to boost sales in Gurgaon", url: "/blog/showroom-interior-design-ideas-increase-sales-gurgaon" },
+      { anchorText: "2BHK interior design cost in Gurgaon", url: "/blog/2bhk-interior-design-cost-in-gurgaon" },
     ],
   },
 
@@ -456,6 +472,7 @@ export const blogPosts: BlogPost[] = [
       { type: "paragraph", text: "If you're searching for showroom interior designers in Gurgaon, choosing experts who understand retail psychology and conversion-focused design can transform your sales. Cargo Interiors combines design expertise with deep understanding of customer behavior to create showrooms that perform. Contact us today for a free consultation." },
       { type: "paragraph", text: "Before locking budgets with vendors, run the numbers through our interior cost calculator — it gives a quick per-sq-ft range that helps you sanity-check any quote." },
       { type: "paragraph", text: "Curious about real numbers? Read our showroom interior design cost in Gurgaon guide for 2026 pricing tiers, key cost drivers and budget-saving tips." },
+      { type: "paragraph", text: "If a home project is on your roadmap too, our 2BHK interior design cost in Gurgaon guide breaks down per sq ft pricing and inclusions for 2026." },
     ],
     faq: [
       { question: "How can showroom design increase sales?", answer: "Strategic product placement, professional lighting, intuitive layouts, and brand-consistent design elements guide customer behavior and increase conversions." },
@@ -470,6 +487,7 @@ export const blogPosts: BlogPost[] = [
     internalLinks: [
       { anchorText: "interior cost calculator", url: "/interior-design-cost-calculator-gurugram" },
       { anchorText: "showroom interior design cost in Gurgaon", url: "/blog/showroom-interior-design-cost-gurgaon" },
+      { anchorText: "2BHK interior design cost in Gurgaon", url: "/blog/2bhk-interior-design-cost-in-gurgaon" },
     ],
   },
 
@@ -650,9 +668,9 @@ export const blogPosts: BlogPost[] = [
   // ===== 2BHK Interior Design Cost in Gurgaon (2026) =====
   {
     slug: "2bhk-interior-design-cost-in-gurgaon",
-    title: "2BHK Interior Design Cost in Gurgaon – Full 2026 Guide",
-    metaTitle: "2BHK Interior Design Cost in Gurgaon 2026 | Per Sq Ft Price Guide",
-    metaDescription: "Realistic 2BHK interior design cost in Gurgaon for 2026 — per sq ft pricing, basic vs premium ranges, what's included and smart budget tips by Cargo Interiors.",
+    title: "2BHK Interior Design Cost in Gurgaon (₹4L–₹25L) – 2026 Pricing Guide",
+    metaTitle: "2BHK Interior Design Cost in Gurgaon (₹4L–₹25L) | 2026 Per Sq Ft Guide",
+    metaDescription: "2BHK interior design cost in Gurgaon ranges ₹4L–₹25L+ in 2026. Get per sq ft pricing, basic vs premium tiers and a clear budget planning guide by Cargo Interiors.",
     category: "Interior Design Tips",
     excerpt: "A clear 2026 breakdown of 2BHK interior design cost in Gurgaon — per sq ft pricing, tier-wise ranges, inclusions and smart ways to plan your budget.",
     image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1200&q=80",
@@ -663,6 +681,18 @@ export const blogPosts: BlogPost[] = [
     content: [
       { type: "paragraph", text: "Ask any homeowner who has just received possession of a 2BHK flat in Gurgaon and the first question is almost always the same: what will the full interior actually cost? It's the most-searched query in the home interior space — and for good reason. Without a realistic number, every showroom visit, every Pinterest board and every quotation feels confusing." },
       { type: "paragraph", text: "This 2026 guide gives you a clear, no-fluff view of 2BHK interior design cost in Gurgaon — current per sq ft ranges, what changes between basic and premium, what's bundled into a quote and what isn't, and how to plan a budget that doesn't slip mid-project. The aim is clarity first, sales pitch never." },
+
+      { type: "heading", text: "Quick Answer: 2BHK Interior Cost at a Glance" },
+      { type: "paragraph", text: "Before we go deep, here's the headline number most readers come for. A full 2BHK interior in Gurgaon in 2026 costs between ₹4 lakh and ₹25 lakh+, depending on tier, finish and scope. Use the comparison table below as your first reference point." },
+      {
+        type: "table",
+        headers: ["Category", "Price Range (2026)", "What's Included"],
+        rows: [
+          { cells: ["Basic", "₹4L – ₹7L", "Modular kitchen with pre-laminated boards, 2 wardrobes, TV unit, basic false ceiling and lighting. Suited to rental or first-home setups."] },
+          { cells: ["Standard", "₹8L – ₹14L", "BWR ply joinery, soft-close hardware, designed wardrobes with tall units, layered ceiling and lighting, full TV/console wall, upgraded finishes."] },
+          { cells: ["Premium", "₹15L – ₹25L+", "Acrylic / PU finishes, imported hardware, veneer panelling, custom furniture, designer lighting, smart-home basics, quartz or marble tops."] },
+        ],
+      },
 
       { type: "heading", text: "Why Budgeting Comes Before Design" },
       { type: "paragraph", text: "Most overspends on Gurgaon 2BHK projects don't happen because materials are expensive — they happen because the budget was never defined upfront. Once a homeowner sees a glossy 3D render, scope expands quickly: a TV unit becomes a panelled wall, a simple ceiling becomes a layered cove. A clear budget anchors decisions and keeps the design honest." },
@@ -676,11 +706,11 @@ export const blogPosts: BlogPost[] = [
       { type: "subheading", text: "Premium 2BHK Interior" },
       { type: "paragraph", text: "Premium 2BHK interiors in Gurgaon start around ₹15 lakh and can comfortably reach ₹25 lakh+. Expect acrylic or PU finishes, imported hardware, veneer panelling, custom-built furniture, designer lighting, smart-home basics and quartz or marble countertops. This is the typical range for luxury apartments and end-use owners staying long-term." },
 
-      { type: "heading", text: "Cost Per Sq Ft (Simple Explanation)" },
+      { type: "heading", text: "Cost Per Sq Ft Explained" },
       { type: "paragraph", text: "Most Gurgaon designers quote full-home interiors on a per sq ft basis. As a 2026 benchmark, basic interiors run around ₹900–₹1,400 per sq ft, standard work between ₹1,500–₹2,400 per sq ft, and premium between ₹2,500 and ₹4,000+ per sq ft. The rate is calculated on carpet area and includes joinery, finishes, ceiling, lighting and basic electrical work." },
       { type: "paragraph", text: "Two 2BHK flats of the same size can land at very different totals because the per sq ft rate depends on core material (MDF vs BWR ply vs marine ply), finish (laminate vs acrylic vs PU vs veneer), hardware brand, and the scope you actually agreed to. That's why two quotes for the same flat can differ by 30–40% — and why understanding the rate behind the number matters more than the number itself." },
 
-      { type: "heading", text: "What Affects 2BHK Interior Cost" },
+      { type: "heading", text: "Factors Affecting 2BHK Interior Cost" },
       { type: "list", items: [
         "Scope — full-home vs partial (only kitchen + wardrobes) changes the total drastically",
         "Core material — BWR ply lasts longer in Gurgaon's humidity but costs more than MDF",
@@ -712,7 +742,7 @@ export const blogPosts: BlogPost[] = [
         "Premium countertop upgrades (quartz, marble) unless quoted separately",
       ]},
 
-      { type: "heading", text: "Smart Budget Tips for 2BHK Owners" },
+      { type: "heading", text: "Budget Planning Tips for 2BHK Owners" },
       { type: "paragraph", text: "Saving money on a 2BHK interior isn't about cutting corners — it's about spending where it matters daily and pulling back where it doesn't. Based on hundreds of Gurgaon homes, here's where smart owners optimise without later regret." },
       { type: "list", items: [
         "Spend on hardware — hinges and channels are touched daily; cheap ones fail within 2 years",
@@ -725,7 +755,7 @@ export const blogPosts: BlogPost[] = [
 
       { type: "heading", text: "Estimate Your Interior Budget" },
       { type: "paragraph", text: "If you'd like a quick, no-pressure ballpark before talking to anyone, try our interior cost calculator. Enter your carpet area and finish preference and you'll get an indicative per sq ft range — useful for sanity-checking quotes from any Gurgaon vendor and for setting a realistic ceiling before the design starts." },
-      { type: "paragraph", text: "It takes under a minute and there's no obligation. Use it as a planning tool, not a sales funnel: 👉 Try Our Interior Cost Calculator at /interior-design-cost-calculator-gurugram." },
+      { type: "paragraph", text: "It takes under a minute and there's no obligation. Use it as a planning tool, not a sales funnel — try our Interior Cost Calculator to benchmark your project before a single designer call." },
 
       { type: "heading", text: "Planning Beyond the Flat?" },
       { type: "paragraph", text: "Some Gurgaon owners are not just designing a 2BHK — they're upgrading floors, adding rooms, or moving into a new builder floor that needs structural work. If your project goes beyond interiors, it helps to also look at house construction services in Gurgaon and the typical construction cost in Gurgaon, so the interior budget fits the bigger picture rather than competing with it." },
@@ -737,10 +767,10 @@ export const blogPosts: BlogPost[] = [
       { type: "paragraph", text: "A well-planned 2BHK interior in Gurugram is less about chasing the lowest quote and more about understanding what you're actually paying for. Once you know your range — basic, standard or premium — and you've separated joinery from appliances and civil work, the conversation with any designer becomes simpler, faster and far more transparent." },
       { type: "paragraph", text: "Cargo Interiors helps Gurgaon homeowners plan 2BHK interiors with clarity — fixed ranges, honest material choices and execution that holds up over years, not months." },
 
-      { type: "heading", text: "Explore More Interior & Construction Guides" },
+      { type: "heading", text: "Related Interior Cost Guides" },
       { type: "list", items: [
         "Modular kitchen cost in Gurgaon — full 2026 price guide",
-        "Office interior design trends in Gurgaon (2026)",
+        "Interior cost per sq ft in Gurgaon — benchmark rates explained",
         "Construction cost guide for Gurugram homeowners",
       ]},
 
@@ -748,10 +778,11 @@ export const blogPosts: BlogPost[] = [
       { type: "paragraph", text: "Stay updated with new project reveals, before/after transformations and design tips from Gurgaon's leading interior team — follow us on Instagram, Facebook, LinkedIn or message us directly on WhatsApp." },
     ],
     faq: [
-      { question: "What is the average 2BHK interior design cost in Gurgaon in 2026?", answer: "Most 2BHK interiors in Gurgaon cost between ₹4 lakh (basic) and ₹25 lakh+ (premium). A standard family 2BHK typically falls in the ₹8–₹14 lakh range." },
-      { question: "What is the 2BHK interior price per sq ft in Gurgaon?", answer: "Per sq ft pricing in 2026 ranges from ₹900–₹1,400 for basic, ₹1,500–₹2,400 for standard and ₹2,500–₹4,000+ for premium interiors, calculated on carpet area." },
-      { question: "Are appliances and loose furniture included in the 2BHK interior cost?", answer: "No. Most quotes cover only fixed joinery, finishes and basic lighting. Appliances, beds, sofas, curtains and civil work are usually billed separately." },
-      { question: "How long does a 2BHK interior take in Gurgaon?", answer: "After design freeze, a standard 2BHK interior typically takes 8–12 weeks for manufacturing and site execution." },
+      { question: "What is the cost of 2BHK interior in Gurgaon?", answer: "A full 2BHK interior in Gurgaon in 2026 costs between ₹4 lakh (basic) and ₹25 lakh+ (premium). A standard family 2BHK typically falls in the ₹8–₹14 lakh range." },
+      { question: "What is cost per sq ft for interiors in Gurgaon?", answer: "Per sq ft pricing in 2026 ranges from ₹900–₹1,400 for basic, ₹1,500–₹2,400 for standard and ₹2,500–₹4,000+ for premium interiors, calculated on the carpet area of the flat." },
+      { question: "How long does a 2BHK interior project take in Gurgaon?", answer: "After design freeze and material selection, a standard 2BHK interior in Gurgaon typically takes 8–12 weeks for factory manufacturing and on-site execution." },
+      { question: "What affects interior pricing the most?", answer: "Core material (MDF vs BWR ply), finish type (laminate vs acrylic vs PU vs veneer), hardware brand, false ceiling and lighting complexity, and overall scope are the biggest cost drivers." },
+      { question: "Are appliances and loose furniture included in a 2BHK interior quote?", answer: "No. Most 2BHK interior quotes cover only fixed joinery, finishes and basic lighting. Appliances, beds, sofas, curtains and civil work are usually billed separately." },
     ],
     internalLink: {
       anchorText: "best interior designer in Gurgaon",
@@ -759,10 +790,10 @@ export const blogPosts: BlogPost[] = [
       paragraphIndex: 0,
     },
     internalLinks: [
-      { anchorText: "interior cost calculator", url: "/interior-design-cost-calculator-gurugram" },
+      { anchorText: "Interior Cost Calculator", url: "/interior-design-cost-calculator-gurugram" },
       { anchorText: "house construction services in Gurgaon", url: "/house-construction-in-gurugram" },
       { anchorText: "construction cost in Gurgaon", url: "/construction-cost-in-gurugram" },
-      { anchorText: "modular kitchen cost in Gurgaon", url: "/blog/modular-kitchen-cost-in-gurgaon" },
+      { anchorText: "Modular kitchen cost in Gurgaon", url: "/blog/modular-kitchen-cost-in-gurgaon" },
     ],
   },
 ];
