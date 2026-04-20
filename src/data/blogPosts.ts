@@ -250,6 +250,7 @@ export const blogPosts: BlogPost[] = [
       { type: "paragraph", text: "Cargo Interiors aapko end-to-end office interior design solutions deta hai — consultation se lekar final handover tak. 100+ projects delivered, 80+ professionals aur har budget ke liye tailored solutions. Aaj hi free consultation book karo aur apne office ka detailed cost estimate lo." },
       { type: "paragraph", text: "Ek quick number chahiye before consultation? Try our interior cost calculator — area aur tier select karo aur indicative per sq ft range mil jayega in seconds." },
       { type: "paragraph", text: "Cost ke saath layout aur trends bhi samajhna chahte ho? Hamara detailed office interior design Gurgaon guide layouts, 2026 trends aur common mistakes cover karta hai." },
+      { type: "paragraph", text: "Ghar ka interior bhi plan kar rahe ho? Hamara 2BHK interior design cost in Gurgaon guide full-home pricing tiers aur inclusions clearly explain karta hai." },
     ],
     faq: [
       { question: "Gurgaon me office interior design ki average cost kitni hai?", answer: "Basic interiors ₹1,500 per sq ft se shuru hote hain, mid-range ₹2,500–₹4,000 aur premium ₹4,000+ per sq ft tak jaata hai." },
@@ -307,6 +308,7 @@ export const blogPosts: BlogPost[] = [
       { type: "paragraph", text: "From concept development to final execution, we ensure every restaurant project is delivered on time and within budget. Our portfolio includes fine dining establishments, casual cafés, cloud kitchens, and QSR outlets throughout the NCR region. Contact Cargo Interiors today to transform your restaurant vision into reality." },
       { type: "paragraph", text: "Planning the budget side first? Use our interior cost calculator to get an indicative per-sq-ft range before you finalise the brief with any designer in Gurgaon." },
       { type: "paragraph", text: "If your project also involves a retail-style display zone, our showroom interior design in Gurugram guide covers space planning, lighting and material selection in depth." },
+      { type: "paragraph", text: "Working on your home alongside the restaurant project? Check our 2BHK interior design cost in Gurgaon guide for clear 2026 pricing tiers." },
     ],
     faq: [
       { question: "How much does restaurant interior design cost in Gurugram?", answer: "Restaurant interior design in Gurugram typically costs between ₹1,500 to ₹4,000 per sq. ft. depending on the theme, materials, and complexity of the design." },
@@ -412,6 +414,7 @@ export const blogPosts: BlogPost[] = [
       { type: "paragraph", text: "Ready to transform your showroom in Gurugram? Cargo Interiors delivers end-to-end showroom interior design services with guaranteed quality and timely completion. Contact us for a free site visit and design consultation." },
       { type: "paragraph", text: "Want a quick budget benchmark before scoping the project? Try our interior cost calculator for an indicative per-sq-ft range tailored to your area." },
       { type: "paragraph", text: "If your goal is sales lift, also read our showroom design ideas to boost sales in Gurgaon — it covers retail psychology, layout flow and conversion-focused design." },
+      { type: "paragraph", text: "Planning your home interiors in parallel? Our 2BHK interior design cost in Gurgaon guide gives a transparent 2026 pricing breakdown for full-home projects." },
     ],
     faq: [
       { question: "How much does showroom interior design cost in Gurugram?", answer: "Showroom interior design costs in Gurugram range from ₹1,200 to ₹3,500 per sq. ft. based on the brand positioning, materials, and design complexity." },
@@ -469,6 +472,7 @@ export const blogPosts: BlogPost[] = [
       { type: "paragraph", text: "If you're searching for showroom interior designers in Gurgaon, choosing experts who understand retail psychology and conversion-focused design can transform your sales. Cargo Interiors combines design expertise with deep understanding of customer behavior to create showrooms that perform. Contact us today for a free consultation." },
       { type: "paragraph", text: "Before locking budgets with vendors, run the numbers through our interior cost calculator — it gives a quick per-sq-ft range that helps you sanity-check any quote." },
       { type: "paragraph", text: "Curious about real numbers? Read our showroom interior design cost in Gurgaon guide for 2026 pricing tiers, key cost drivers and budget-saving tips." },
+      { type: "paragraph", text: "If a home project is on your roadmap too, our 2BHK interior design cost in Gurgaon guide breaks down per sq ft pricing and inclusions for 2026." },
     ],
     faq: [
       { question: "How can showroom design increase sales?", answer: "Strategic product placement, professional lighting, intuitive layouts, and brand-consistent design elements guide customer behavior and increase conversions." },
