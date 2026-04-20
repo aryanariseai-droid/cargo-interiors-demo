@@ -153,6 +153,7 @@ export const blogPosts: BlogPost[] = [
       { type: "paragraph", text: "Cargo Interiors aapko end-to-end office interior design solutions deta hai — 3D visualization se lekar final execution tak. Chahe startup workspace ho ya corporate headquarters, hum aapke vision ko reality me convert karte hain. Aaj hi free consultation book karo." },
       { type: "paragraph", text: "Before finalising scope, most clients prefer a quick ballpark figure. Try our interior cost calculator to estimate your per-sq-ft budget in under a minute — useful for comparing quotes from any Gurgaon vendor." },
       { type: "paragraph", text: "If pricing is your next big question, our detailed office interior design cost in Gurgaon guide breaks down basic, mid-range and premium tiers with real project examples." },
+      { type: "paragraph", text: "Planning a home alongside the office? Our 2BHK interior design cost in Gurgaon guide gives a clear 2026 price range for full-home interiors." },
     ],
     faq: [
       { question: "Gurgaon me office interior design ka best layout kaunsa hai?", answer: "Hybrid layout — jo open workstations ko private focus pods aur collaboration zones ke saath combine karta hai — Gurgaon ke modern offices me sabse effective hai." },
@@ -169,6 +170,7 @@ export const blogPosts: BlogPost[] = [
     internalLinks: [
       { anchorText: "interior cost calculator", url: "/interior-design-cost-calculator-gurugram" },
       { anchorText: "office interior design cost in Gurgaon", url: "/blog/office-interior-design-cost-gurgaon" },
+      { anchorText: "2BHK interior design cost in Gurgaon", url: "/blog/2bhk-interior-design-cost-in-gurgaon" },
     ],
   },
 
@@ -264,6 +266,7 @@ export const blogPosts: BlogPost[] = [
     internalLinks: [
       { anchorText: "interior cost calculator", url: "/interior-design-cost-calculator-gurugram" },
       { anchorText: "office interior design Gurgaon guide", url: "/blog/office-interior-design-gurgaon-guide" },
+      { anchorText: "2BHK interior design cost in Gurgaon", url: "/blog/2bhk-interior-design-cost-in-gurgaon" },
     ],
   },
 
@@ -317,6 +320,7 @@ export const blogPosts: BlogPost[] = [
     internalLinks: [
       { anchorText: "interior cost calculator", url: "/interior-design-cost-calculator-gurugram" },
       { anchorText: "showroom interior design in Gurugram", url: "/blog/showroom-interior-design-gurugram" },
+      { anchorText: "2BHK interior design cost in Gurgaon", url: "/blog/2bhk-interior-design-cost-in-gurgaon" },
     ],
   },
 
@@ -421,6 +425,7 @@ export const blogPosts: BlogPost[] = [
     internalLinks: [
       { anchorText: "interior cost calculator", url: "/interior-design-cost-calculator-gurugram" },
       { anchorText: "showroom design ideas to boost sales in Gurgaon", url: "/blog/showroom-interior-design-ideas-increase-sales-gurgaon" },
+      { anchorText: "2BHK interior design cost in Gurgaon", url: "/blog/2bhk-interior-design-cost-in-gurgaon" },
     ],
   },
 
@@ -478,6 +483,7 @@ export const blogPosts: BlogPost[] = [
     internalLinks: [
       { anchorText: "interior cost calculator", url: "/interior-design-cost-calculator-gurugram" },
       { anchorText: "showroom interior design cost in Gurgaon", url: "/blog/showroom-interior-design-cost-gurgaon" },
+      { anchorText: "2BHK interior design cost in Gurgaon", url: "/blog/2bhk-interior-design-cost-in-gurgaon" },
     ],
   },
 
