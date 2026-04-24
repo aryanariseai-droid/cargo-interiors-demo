@@ -15,33 +15,56 @@ const baseTrust = [
 const a = (href: string, text: string) =>
   `<a href="${href}">${text}</a>`;
 
-// Frequently-reused link snippets (sentence fragments containing one anchor).
+// STRICT anchor → destination mapping.
+// Each anchor's text and href below are locked per the site-wide internal
+// linking spec. Do not vary anchor text per page — keep usage consistent.
 const L = {
+  // ---- Main authority links ----
   bestDesigner: a("/interior-designer-in-gurgaon", "best interior designer in Gurgaon"),
-  experiencedTeam: a("/experienced-interior-designer-in-gurgaon", "experienced interior design team"),
-  trustedDesigner: a("/trusted-interior-designer-in-gurgaon", "trusted interior designer in Gurgaon"),
+  interiorPortfolio: a("/interior-design-portfolio-gurgaon", "interior design portfolio in Gurgaon"),
   homePortfolio: a("/home-interior-design-portfolio-gurgaon", "home interior design portfolio in Gurgaon"),
-  projects: a("/interior-designer-projects-in-gurgaon", "real interior designer projects in Gurgaon"),
-  twoBhk: a("/2bhk-flat-interior-designer-in-gurgaon", "2BHK flat interior designer in Gurgaon"),
-  villa: a("/villa-interior-designer-in-gurgaon", "villa interior solutions"),
-  kitchen: a("/modular-kitchen-designer-in-gurgaon", "modular kitchen experts"),
-  living: a("/living-room-interior-design-in-gurgaon", "living room interior design"),
-  bedroom: a("/master-bedroom-interior-design-in-gurgaon", "master bedroom interior design"),
-  bathWardrobe: a("/bathroom-and-wardrobe-designer-in-gurgaon", "bathroom and wardrobe specialists"),
+  officeDesignerMain: a("/office-interior-designer-in-gurgaon", "office interior designer in Gurgaon"),
+
+  // ---- Trust pages ----
+  experiencedTeam: a("/experienced-interior-designer-in-gurgaon", "experienced interior designer in Gurgaon"),
+  trustedDesigner: a("/trusted-interior-designer-in-gurgaon", "trusted interior designer in Gurgaon"),
+  projects: a("/interior-designer-projects-in-gurgaon", "interior designer with 100+ projects in Gurgaon"),
+  experienceYears: a("/experienced-interior-designer-in-gurgaon", "years of experience in interior design"),
+  hundredsSpaces: a("/interior-designer-with-100-projects-in-gurgaon", "hundreds of spaces designed"),
+
+  // ---- Home interior links ----
+  twoBhk: a("/2bhk-flat-interior-design-in-gurgaon", "2BHK interior design in Gurgaon"),
+  villa: a("/villa-interior-design-in-gurgaon", "villa interior design in Gurgaon"),
+  kitchen: a("/modular-kitchen-design-in-gurgaon", "modular kitchen design in Gurgaon"),
+  living: a("/living-room-interior-design-in-gurgaon", "living room interior design in Gurgaon"),
+  bedroom: a("/master-bedroom-interior-design-in-gurgaon", "master bedroom interior design in Gurgaon"),
+  bathWardrobe: a("/bathroom-and-wardrobe-design-solutions-in-gurgaon", "bathroom and wardrobe design solutions"),
+
+  // ---- Office interior links ----
+  corporate: a("/corporate-office-interior-design-in-gurgaon", "corporate office interior design in Gurgaon"),
+  startup: a("/startup-and-coworking-office-interiors-in-gurgaon", "startup and coworking office interiors"),
+  conference: a("/conference-and-meeting-room-design-in-gurgaon", "conference and meeting room design"),
+  reception: a("/reception-and-branding-area-design-in-gurgaon", "reception and branding area design"),
   ergonomic: a("/ergonomic-office-interior-design-in-gurgaon", "ergonomic office interior design"),
-  corporate: a("/corporate-office-interior-design-in-gurgaon", "corporate office interiors"),
-  startup: a("/startup-and-coworking-office-interiors-in-gurgaon", "startup office design ideas"),
-  conference: a("/conference-and-meeting-room-design-in-gurgaon", "conference room interiors"),
-  reception: a("/reception-and-branding-area-design-in-gurgaon", "reception and branding design"),
-  officeService: a("/office-interior-design-gurgaon", "office interior design in Gurgaon"),
+  officeLeading: a("/office-interior-designer-in-gurgaon", "leading office interior designer in Gurugram"),
+
+  // ---- Blog / cost links ----
+  costBlog: a("/blog/2bhk-interior-design-cost-in-gurgaon", "interior design cost in Gurgaon"),
+  twoBhkCostBlog: a("/blog/2bhk-interior-design-cost-in-gurgaon", "interior design cost in Gurgaon"),
+  kitchenCostBlog: a("/blog/modular-kitchen-cost-in-gurgaon", "modular kitchen cost in Gurgaon"),
+  officeCostBlog: a("/blog/office-interior-design-cost-gurgaon", "office interior cost in Gurgaon"),
+  costCalculator: a("/interior-cost-calculator", "interior cost calculator"),
+  budgetPlanning: a("/blog/2bhk-interior-design-cost-in-gurgaon", "budget planning for interiors"),
+
+  // ---- Secondary / supporting (non-mapping) links retained for context ----
+  // Kept so that existing page content compiles without rewriting every section.
+  // These do not appear in the strict mapping but point to real pages already
+  // indexed on the site, so they continue to add internal-linking value.
+  officeService: a("/office-interior-designer-in-gurgaon", "office interior designer in Gurgaon"),
   homeService: a("/home-interior", "home interior design solutions"),
   showroomService: a("/showroom-interior-design-gurgaon", "showroom interior design in Gurgaon"),
-  costCalculator: a("/interior-design-cost-calculator-gurugram", "interior cost calculator"),
-  twoBhkCostBlog: a("/blog/2bhk-interior-design-cost-in-gurgaon", "2BHK interior cost guide"),
-  kitchenCostBlog: a("/blog/modular-kitchen-cost-in-gurgaon", "modular kitchen cost in Gurgaon"),
-  officeCostBlog: a("/blog/office-interior-design-cost-gurgaon", "office interior cost guide"),
-  showroomCostBlog: a("/blog/showroom-interior-design-cost-gurgaon", "showroom interior cost breakdown"),
   officeGuideBlog: a("/blog/office-interior-design-gurgaon-guide", "complete office interior design guide"),
+  showroomCostBlog: a("/blog/showroom-interior-design-cost-gurgaon", "showroom interior cost breakdown"),
   showroomIdeasBlog: a("/blog/showroom-interior-design-ideas-increase-sales-gurgaon", "showroom design ideas to drive sales"),
   homeTrendsBlog: a("/blog/home-interior-design-trends-2025", "2025 home interior design trends"),
   dlfPhase1: a("/interior-designer-in-dlf-phase-1-gurgaon", "interior designer in DLF Phase 1"),
@@ -50,7 +73,7 @@ const L = {
   sohnaRoad: a("/interior-designer-in-sohna-road-gurgaon", "Sohna Road home interiors"),
   sector67: a("/interior-designer-in-sector-67-gurgaon", "Sector 67 interior designer"),
   homeDesigner: a("/home-interior-designer-gurgaon", "home interior designer in Gurgaon"),
-  officeDesigner: a("/office-interior-designer-gurgaon", "office interior designer in Gurgaon"),
+  officeDesigner: a("/office-interior-designer-in-gurgaon", "office interior designer in Gurgaon"),
   showroomDesigner: a("/showroom-interior-designer-gurgaon", "showroom interior designer in Gurgaon"),
 };
 
