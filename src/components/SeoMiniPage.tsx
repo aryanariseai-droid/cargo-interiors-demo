@@ -181,7 +181,7 @@ export default function SeoMiniPage({ data }: { data: SeoMiniPageData }) {
               <Link
                 key={l.to}
                 to={l.to}
-                className="group rounded-xl border border-border bg-card/50 p-5 hover:border-primary/60 transition-colors"
+                className="group rounded-xl border border-border bg-card/50 p-5 hover:border-primary/60 hover:bg-card/70 hover:-translate-y-0.5 transition-all cursor-pointer flex flex-col"
               >
                 <div className="flex items-center justify-between gap-3">
                   <h3 className="font-display text-base text-foreground group-hover:text-primary transition-colors">
@@ -192,6 +192,9 @@ export default function SeoMiniPage({ data }: { data: SeoMiniPageData }) {
                 {l.description && (
                   <p className="text-sm text-muted-foreground leading-relaxed mt-2">{l.description}</p>
                 )}
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary underline decoration-primary/50 underline-offset-4 group-hover:decoration-primary">
+                  Read More <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+                </span>
               </Link>
             ))}
           </div>
