@@ -67,7 +67,7 @@ export default function SeoMiniPage({ data }: { data: SeoMiniPageData }) {
           </h1>
           <RichParagraph
             html={data.intro}
-            className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto [&_a]:text-primary [&_a]:underline-offset-4 hover:[&_a]:underline"
+            className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto [&_a]:text-primary [&_a]:font-medium [&_a]:underline [&_a]:decoration-primary/50 [&_a]:underline-offset-4 [&_a]:transition-colors hover:[&_a]:text-primary/80 hover:[&_a]:decoration-primary"
           />
           <div className="flex flex-wrap justify-center gap-3 mt-8">
             <CTAButton>Book Free Consultation</CTAButton>
