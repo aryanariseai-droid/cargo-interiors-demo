@@ -93,6 +93,7 @@ const App = () => (
             <Route path="/interior-design-portfolio-gurgaon" element={<Navigate to="/our-portfolio" replace />} />
             <Route path="/office-interior-designer-in-gurgaon" element={<OfficeInteriorDesigner />} />
             <Route path="/interior-designer-in-gurgaon" element={<InteriorDesignerGurgaon />} />
+            <Route path="/showroom-interior-designer-in-gurgaon" element={<Navigate to="/showroom-interior-designer-gurgaon" replace />} />
             <Route path="/interior-cost-calculator" element={<Navigate to="/interior-design-cost-calculator-gurugram" replace />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
