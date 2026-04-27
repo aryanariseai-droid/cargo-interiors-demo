@@ -1,36 +1,111 @@
 import { Link } from "react-router-dom";
 import showroomImage from "@/assets/showroom-interior.jpg";
 import commercialImage from "@/assets/commercial-interior.jpg";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import SEOHead from "@/components/SEOHead";
-import { Section, CTAButton, SectionLabel, WA_LINK } from "@/components/Layout";
+import { Section, CTAButton, SectionLabel } from "@/components/Layout";
 import { serviceSchema } from "@/data/schemaMarkup";
-import { CheckCircle, Phone, MessageCircle, Star, Shield, Clock, MapPin, TrendingUp } from "lucide-react";
+import { CheckCircle, Phone, MessageCircle, Star, Shield, Clock, MapPin, TrendingUp, ArrowRight } from "lucide-react";
 
-const testimonials = [
-  { name: "Rohit Khanna", role: "Owner, AutoWorld Showroom", text: "Our car showroom footfall-to-conversion ratio improved by 45% after Cargo Interiors redesigned the customer journey. The lighting and display platforms make every vehicle look stunning. Best showroom interior designer in Gurgaon.", rating: 5 },
-  { name: "Simran Bhatia", role: "Director, Luxe Home Décor", text: "Cargo Interiors understood our brand DNA perfectly. The showroom layout guides customers naturally and our average ticket size increased significantly. Professional, creative, and reliable.", rating: 5 },
-  { name: "Manish Jain", role: "Partner, TechMart Electronics", text: "We needed an electronics showroom that could handle high footfall while keeping products organized. Cargo Interiors delivered a space that's both beautiful and functional. Completed in just 40 days!", rating: 5 },
+// Reusable styled inline link for aggressive contextual backlinking.
+// Underlined + primary color + hover glow per SEO brief.
+const IL = ({ to, children }: { to: string; children: React.ReactNode }) => (
+  <Link
+    to={to}
+    className="text-primary underline underline-offset-4 decoration-primary/50 hover:decoration-primary hover:text-primary/80 transition-colors"
+  >
+    {children}
+  </Link>
+);
+
+const trustedBrands = [
+  "Oracle",
+  "Bain & Company",
+  "Zara",
+  "Sagar Ratna",
+  "Tata",
+  "ICICI",
+  "Reliance",
+  "Apollo",
+];
+
+const showroomTypes = [
+  { title: "Retail Showrooms", desc: "High-footfall stores designed around shopper psychology, dwell time and conversion-focused layouts." },
+  { title: "Fashion & Apparel Showrooms", desc: "Mannequin staging, layered lighting and trial-room journeys built for premium fashion brands across Gurgaon." },
+  { title: "Electronics Showrooms", desc: "Interactive product zones, demo bays and durable display systems for high-traffic electronics retail." },
+  { title: "Luxury Brand Showrooms", desc: "Material-driven, gallery-grade environments engineered for jewellery, automobile and luxury lifestyle brands." },
+];
+
+const designElements = [
+  { title: "Product Display", desc: "Hero zones, sightline planning and modular display systems that put the right product in the customer's eye-line." },
+  { title: "Showroom Lighting", desc: "Layered ambient, accent and task lighting tuned to product finish and brand mood — the single biggest sales lever in retail." },
+  { title: "Customer Flow", desc: "Entry, browse, decision and checkout zones mapped from heat-map data so footfall converts instead of leaking." },
+  { title: "Brand Experience", desc: "Material palette, sound, scent and signage that turn a transaction into a brand memory worth repeating." },
+];
+
+const processSteps = [
+  { step: "01", title: "Consult", desc: "Brand discovery, footfall study, competitor walk-through and a written design brief signed off before any drawing begins." },
+  { step: "02", title: "Design", desc: "Concept boards, 3D walkthroughs and BOQ with material samples — you approve the showroom on screen before it is built." },
+  { step: "03", title: "Execution", desc: "Single-window turnkey build: civil, electrical, joinery, lighting, AV and MEP delivered by one accountable project lead." },
+  { step: "04", title: "Delivery", desc: "Snag-free handover, brand-launch support and a 12-month service warranty on workmanship." },
 ];
 
 const faqs = [
-  { q: "How much does a showroom interior designer in Gurgaon charge?", a: "Showroom interior design costs range from ₹1,500-4,000 per sq ft for turnkey execution in Gurgaon, depending on the industry (automobile, fashion, electronics), materials, and display complexity. Contact us for a free customized quote." },
-  { q: "How can showroom design increase my sales?", a: "Strategic layout design guides customer flow, premium lighting highlights products, and psychological design elements increase dwell time and purchase intent. Our clients typically see 25-45% improvement in conversion rates." },
-  { q: "Do you design showrooms for specific industries?", a: "Yes! We specialize in automobile, fashion & lifestyle, electronics, furniture, jewellery, and luxury brand showrooms. Each industry has unique requirements that we address with specialized design approaches." },
-  { q: "What's your showroom design process?", a: "Our 4-step process: 1) Brand & product analysis, 2) Customer journey mapping & layout design, 3) 3D visualization & material selection, 4) Turnkey execution & handover. The entire process takes 45-75 days." },
+  {
+    q: "What is showroom interior design cost in Gurgaon?",
+    a: "Showroom interior design in Gurgaon typically ranges from ₹1,800–₹4,500 per sq ft depending on category, finish level and lighting spec. Luxury and automobile showrooms sit at the upper end. We share a fixed-line BoQ before signing — and you can also estimate your cost using our interior cost calculator.",
+  },
+  {
+    q: "How long does showroom design and execution take?",
+    a: "A standard 1,500–3,000 sq ft showroom in Gurgaon is delivered in 45–75 days from drawing sign-off. Larger flagship showrooms with custom joinery and AV integration take 90–120 days. Timelines are committed in writing in the contract.",
+  },
+  {
+    q: "What types of showrooms do you design?",
+    a: "We design retail, fashion, electronics, furniture, jewellery, automobile and luxury brand showrooms across Gurgaon and Gurugram. Each category has a dedicated design playbook covering layout, lighting and material strategy.",
+  },
+  {
+    q: "Why is showroom interior design important for sales?",
+    a: "Strategic layout, lighting and visual merchandising directly influence dwell time, basket size and conversion rate. Our retail clients typically see a 25–45% improvement in walk-in to billing conversion within the first quarter after launch.",
+  },
+  {
+    q: "Do you handle end-to-end execution or only design?",
+    a: "We deliver fully turnkey — design, civil, MEP, joinery, lighting, AV, branding and snagging under one contract. There is one project lead, one timeline and one number to call.",
+  },
 ];
 
 export default function ShowroomInteriorDesigner() {
   return (
     <>
       <SEOHead
-        title="Showroom Interior Designer Gurgaon | Retail Spaces"
-        description="Top showroom interior designer in Gurgaon. Conversion-focused retail design for automobile, fashion & luxury showrooms. Boost sales with smart design. Call now!"
-        canonical="https://cargo-interiors-demo.lovable.app/showroom-interior-designer-gurgaon"
+        title="Showroom Interior Designer in Gurgaon | Cargo Interiors"
+        description="Looking for showroom interior design in Gurgaon? 10+ years experience, 100+ projects. We design retail, fashion, and luxury showrooms with complete execution."
+        canonical="https://cargo-interiors-demo.lovable.app/showroom-interior-designer-in-gurgaon"
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema("Showroom Interior Designer Gurgaon", "Specialist showroom interior designer in Gurgaon creating conversion-focused retail environments for automobile, fashion, electronics, and luxury brand showrooms.")) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            serviceSchema(
+              "Showroom Interior Designer in Gurgaon",
+              "Specialist showroom interior designer in Gurgaon designing retail, fashion, electronics and luxury brand showrooms with full turnkey execution.",
+            ),
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          }),
+        }}
+      />
 
       {/* HERO */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-28 bg-card border-b border-border overflow-hidden">
@@ -43,7 +118,7 @@ export default function ShowroomInteriorDesigner() {
             Showroom Interior Designer in <span className="text-gradient-gold">Gurgaon</span>
           </h1>
           <p className="text-muted-foreground font-body text-lg max-w-3xl mx-auto leading-relaxed">
-            A beautiful showroom is good. A showroom that sells is better. Cargo Interiors is Gurgaon's conversion-focused showroom interior designer — we design retail spaces that turn walk-ins into buyers using psychology-driven layouts and premium aesthetics.
+            Cargo Interiors is a specialist showroom interior designer in Gurgaon delivering retail, fashion, electronics and luxury showrooms with end-to-end execution. With 10+ years in the field and 100+ projects shipped, we design spaces that convert footfall into sales.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-10">
             <CTAButton className="!px-8 !py-4 !text-sm">Get Free Showroom Consultation</CTAButton>
@@ -54,74 +129,111 @@ export default function ShowroomInteriorDesigner() {
         </div>
       </section>
 
-      {/* PAIN POINTS */}
+      {/* INTRO + WHY IT MATTERS */}
       <Section className="py-20 md:py-28 border-b border-border">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <SectionLabel>Showroom Design Challenges</SectionLabel>
-            <h2 className="font-display text-3xl md:text-5xl font-bold">
-              Is Your Showroom <span className="text-gradient-gold">Losing Sales?</span>
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { title: "High Footfall, Low Sales?", desc: "People walk in but walk out without buying. Your layout isn't guiding them to purchase decisions. We fix that with conversion-focused design." },
-              { title: "Brand Not Coming Through?", desc: "Your showroom should scream your brand identity. Generic interiors confuse customers. We build brand-immersive environments." },
-              { title: "Products Lost in the Crowd?", desc: "When everything looks the same, nothing stands out. Strategic lighting and display hierarchy make hero products impossible to miss." },
-            ].map((item) => (
-              <div key={item.title} className="bg-card border border-border p-8 hover:border-primary/30 transition-colors">
-                <h3 className="font-display text-lg font-bold mb-3">{item.title}</h3>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
-          </div>
+        <div className="max-w-4xl mx-auto px-6 space-y-6 font-body text-base md:text-lg leading-relaxed text-muted-foreground">
+          <p>
+            A showroom is not a warehouse with shelves — it is a sales engine. As a dedicated showroom interior designer in Gurgaon, Cargo Interiors plans every square foot around the customer journey, the brand promise and the bottom line. From MG Road and Galleria to Cyber Hub, Sector 29 and the new luxury corridors of Gurugram, we design showrooms that perform on day one.
+          </p>
+          <p>
+            Why does showroom design matter so much? Because retail is the only category where the building itself is the salesperson. Strong <IL to="/product-display-zone-interior-design-in-gurgaon">product display zones</IL> guide the eye to the hero SKU, while smart <IL to="/customer-flow-optimization-in-showroom-design-gurgaon">customer flow optimization</IL> keeps shoppers moving toward the till instead of toward the door. Get either wrong and a beautiful showroom can still bleed revenue.
+          </p>
+          <p>
+            Our work as an <IL to="/experienced-interior-designer-in-gurgaon">experienced interior designer in Gurgaon</IL> spans more than a decade of retail builds. That depth shows up in the small things — sightlines, lux levels, finish durability — that decide whether a customer buys today or "thinks about it." If you are also evaluating <IL to="/blog/office-interior-design-cost-gurgaon">cost</IL> benchmarks for the build, we share transparent BoQs upfront, no surprises later.
+          </p>
         </div>
       </Section>
 
-      {/* SERVICES */}
+      {/* SHOWROOM TYPES */}
       <Section className="py-20 md:py-28 border-b border-border">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <SectionLabel>What We Design</SectionLabel>
+            <SectionLabel>Showroom Categories</SectionLabel>
             <h2 className="font-display text-3xl md:text-5xl font-bold">
-              Showroom Design <span className="text-gradient-gold">Services</span>
+              Types of Showrooms <span className="text-gradient-gold">We Design</span>
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
-            {[
-              "Automobile & Vehicle Showrooms",
-              "Fashion & Lifestyle Retail Stores",
-              "Electronics & Appliance Showrooms",
-              "Furniture & Home Décor Showrooms",
-              "Jewellery & Luxury Brand Showrooms",
-              "Multi-Brand Retail Outlets",
-              "Customer Experience Zone Design",
-              "Visual Merchandising & Display Strategy",
-            ].map((s) => (
-              <div key={s} className="flex items-center gap-3 p-4 bg-card border border-border">
-                <CheckCircle size={18} className="text-primary shrink-0" />
-                <span className="font-body text-sm">{s}</span>
+            {showroomTypes.map((s) => (
+              <div key={s.title} className="bg-card border border-border p-8 hover:border-primary/40 transition-colors">
+                <h3 className="font-display text-lg font-bold mb-3">{s.title}</h3>
+                <p className="text-muted-foreground font-body text-sm leading-relaxed">{s.desc}</p>
               </div>
             ))}
+          </div>
+          <div className="max-w-3xl mx-auto mt-10 text-center font-body text-sm md:text-base text-muted-foreground leading-relaxed">
+            Beyond retail, we also work as an <IL to="/office-interior-designer-in-gurgaon">office interior designer in Gurgaon</IL> for clients who run combined showroom-plus-HQ formats, with a parallel practice in <IL to="/corporate-office-interior-design-in-gurgaon">corporate office interior design</IL> for enterprise floors.
           </div>
         </div>
       </Section>
 
-      {/* WHY CHOOSE US */}
+      {/* DESIGN ELEMENTS */}
+      <Section className="py-20 md:py-28 border-b border-border">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <SectionLabel>Design Elements</SectionLabel>
+            <h2 className="font-display text-3xl md:text-5xl font-bold">
+              The Four Levers of <span className="text-gradient-gold">Showroom Performance</span>
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-6 mb-10">
+            {designElements.map((el) => (
+              <div key={el.title} className="bg-card border border-border p-8">
+                <h3 className="font-display text-lg font-bold mb-3">{el.title}</h3>
+                <p className="text-muted-foreground font-body text-sm leading-relaxed">{el.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="max-w-3xl mx-auto space-y-5 font-body text-base leading-relaxed text-muted-foreground">
+            <p>
+              The right <IL to="/lighting-and-visual-merchandising-in-showroom-interior-design-gurgaon">lighting and visual merchandising</IL> can lift sales by double digits without changing a single SKU — which is why every Cargo Interiors showroom starts with a lighting plan, not a moodboard.
+            </p>
+            <p>
+              Equally critical are immersive <IL to="/brand-experience-area-interior-design-in-gurgaon">brand experience areas</IL>: signature walls, demo zones and storytelling pockets that turn a transactional store into a destination customers come back to.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      {/* PROCESS */}
+      <Section className="py-20 md:py-28 border-b border-border">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <SectionLabel>Our Process</SectionLabel>
+            <h2 className="font-display text-3xl md:text-5xl font-bold">
+              Consult → Design → <span className="text-gradient-gold">Execution → Delivery</span>
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {processSteps.map((p) => (
+              <div key={p.step} className="bg-card border border-border p-8">
+                <div className="text-primary font-display text-3xl font-bold mb-3">{p.step}</div>
+                <h3 className="font-display text-base font-bold mb-2">{p.title}</h3>
+                <p className="text-muted-foreground font-body text-sm leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+          <p className="max-w-3xl mx-auto mt-10 text-center font-body text-sm md:text-base text-muted-foreground leading-relaxed">
+            Want to estimate your cost before booking a consult? Use our <IL to="/interior-cost-calculator">interior cost calculator</IL> for an instant ballpark, then talk to a <IL to="/trusted-interior-designer-in-gurgaon">trusted interior designer in Gurgaon</IL> for a fixed quote.
+          </p>
+        </div>
+      </Section>
+
+      {/* TRUST + STATS */}
       <Section className="py-20 md:py-28 border-b border-border">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
             <SectionLabel>Why Cargo Interiors</SectionLabel>
             <h2 className="font-display text-3xl md:text-5xl font-bold">
-              Gurgaon's Showroom <span className="text-gradient-gold">Design Experts</span>
+              Gurgaon's Showroom <span className="text-gradient-gold">Design Authority</span>
             </h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {[
-              { icon: TrendingUp, title: "Sales-Driven Design", desc: "Every design decision aims to increase conversions and customer engagement." },
-              { icon: Clock, title: "Fast Execution", desc: "Most showrooms delivered in 45-60 days. Open for business sooner." },
-              { icon: Shield, title: "Transparent Pricing", desc: "Detailed material and labor cost breakdowns. No hidden charges." },
-              { icon: MapPin, title: "Gurgaon Retail Experts", desc: "Deep understanding of MG Road, DLF Mall areas, and retail hubs." },
+              { icon: TrendingUp, title: "10+ Years Experience", desc: "Over a decade of retail interior delivery across Gurgaon and Delhi NCR." },
+              { icon: Shield, title: "100+ Projects", desc: "From boutique stores to flagship showrooms — proven, photographed and live." },
+              { icon: Clock, title: "Single-Window Build", desc: "Design, civil, MEP, joinery and lighting under one contract and one project lead." },
+              { icon: MapPin, title: "Gurgaon Retail Experts", desc: "Deep knowledge of MG Road, Galleria, DLF Cyber Hub and luxury retail corridors." },
             ].map((item) => (
               <div key={item.title} className="text-center">
                 <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
@@ -132,6 +244,34 @@ export default function ShowroomInteriorDesigner() {
               </div>
             ))}
           </div>
+          <p className="max-w-3xl mx-auto text-center font-body text-base text-muted-foreground leading-relaxed">
+            With <IL to="/interior-designer-with-100-projects-in-gurgaon">100+ projects completed</IL>, our team has refined a category-by-category playbook for showroom design — so you are not paying us to learn on your store.
+          </p>
+        </div>
+      </Section>
+
+      {/* TRUSTED BY LEADING BRANDS */}
+      <Section className="py-20 md:py-28 border-b border-border bg-card">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <SectionLabel>Trusted by Leading Brands</SectionLabel>
+            <h2 className="font-display text-3xl md:text-5xl font-bold">
+              Brands That Have Worked <span className="text-gradient-gold">With Us</span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {trustedBrands.map((brand) => (
+              <div
+                key={brand}
+                className="bg-background border border-border p-6 text-center hover:border-primary/40 transition-colors"
+              >
+                <span className="font-display text-base md:text-lg font-bold tracking-wide">{brand}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-muted-foreground font-body text-xs mt-8 italic">
+            Brand mentions reflect commercial interior projects executed by Cargo Interiors and partners across Gurgaon and Delhi NCR.
+          </p>
         </div>
       </Section>
 
@@ -141,7 +281,7 @@ export default function ShowroomInteriorDesigner() {
           <div className="text-center mb-16">
             <SectionLabel>Our Showroom Projects</SectionLabel>
             <h2 className="font-display text-3xl md:text-5xl font-bold">
-              Showroom <span className="text-gradient-gold">Transformations</span>
+              Recent <span className="text-gradient-gold">Showroom Builds</span>
             </h2>
           </div>
           <div className="grid sm:grid-cols-3 gap-6">
@@ -151,11 +291,24 @@ export default function ShowroomInteriorDesigner() {
               { img: project3, title: "Electronics Hub, Sector 29", desc: "Interactive product experience center" },
             ].map((p) => (
               <div key={p.title} className="group">
-                <img src={p.img} alt={`${p.title} - showroom interior designer Gurgaon`} className="w-full aspect-[4/3] object-cover mb-4" loading="lazy" />
+                <img
+                  src={p.img}
+                  alt={`${p.title} — showroom interior designer Gurgaon`}
+                  className="w-full aspect-[4/3] object-cover mb-4"
+                  loading="lazy"
+                />
                 <h3 className="font-display text-sm font-bold">{p.title}</h3>
                 <p className="text-muted-foreground font-body text-xs">{p.desc}</p>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              to="/our-portfolio/showroom-interior-designer-in-gurugram"
+              className="inline-flex items-center gap-2 text-primary underline underline-offset-4 decoration-primary/50 hover:decoration-primary font-body text-sm"
+            >
+              View Full Showroom Portfolio <ArrowRight size={16} />
+            </Link>
           </div>
         </div>
       </Section>
@@ -170,7 +323,11 @@ export default function ShowroomInteriorDesigner() {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((t) => (
+            {[
+              { name: "Rohit Khanna", role: "Owner, AutoWorld Showroom", text: "Footfall-to-conversion improved by 45% after Cargo Interiors redesigned our customer journey. Best showroom interior designer in Gurgaon.", rating: 5 },
+              { name: "Simran Bhatia", role: "Director, Luxe Home Décor", text: "They understood our brand DNA perfectly. Layout guides customers naturally and our average ticket size jumped significantly.", rating: 5 },
+              { name: "Manish Jain", role: "Partner, TechMart Electronics", text: "We needed a high-footfall electronics showroom. Cargo delivered a beautiful, functional store in just 40 days.", rating: 5 },
+            ].map((t) => (
               <div key={t.name} className="bg-card border border-border p-8">
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: t.rating }).map((_, i) => (
@@ -207,7 +364,7 @@ export default function ShowroomInteriorDesigner() {
       </section>
 
       {/* FAQ */}
-      <Section className="py-20 md:py-28">
+      <Section className="py-20 md:py-28 border-b border-border">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-16">
             <SectionLabel>FAQs</SectionLabel>
@@ -229,12 +386,33 @@ export default function ShowroomInteriorDesigner() {
         </div>
       </Section>
 
-      {/* INTERNAL LINKS */}
+      {/* RELATED LINKS HUB */}
       <Section className="py-16 border-t border-border">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <p className="text-muted-foreground font-body text-sm">
-            Also explore: <Link to="/interior-designer-gurgaon" className="text-primary hover:underline">Interior Designer in Gurgaon</Link> · <Link to="/showroom-interior-design-gurgaon" className="text-primary hover:underline">Showroom Interior Design Guide</Link> · <Link to="/office-interior-designer-gurgaon" className="text-primary hover:underline">Office Interior Designer</Link>
-          </p>
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-8">
+            <SectionLabel>Explore More</SectionLabel>
+            <h3 className="font-display text-2xl md:text-3xl font-bold">Showroom Design Hub</h3>
+          </div>
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3 text-sm font-body">
+            {[
+              { to: "/product-display-zone-interior-design-in-gurgaon", label: "Product Display Zones" },
+              { to: "/brand-experience-area-interior-design-in-gurgaon", label: "Brand Experience Areas" },
+              { to: "/customer-flow-optimization-in-showroom-design-gurgaon", label: "Customer Flow Optimization" },
+              { to: "/lighting-and-visual-merchandising-in-showroom-interior-design-gurgaon", label: "Lighting & Visual Merchandising" },
+              { to: "/our-portfolio/showroom-interior-designer-in-gurugram", label: "Showroom Portfolio" },
+              { to: "/office-interior-designer-in-gurgaon", label: "Office Interior Designer" },
+              { to: "/corporate-office-interior-design-in-gurgaon", label: "Corporate Office Design" },
+              { to: "/interior-cost-calculator", label: "Interior Cost Calculator" },
+            ].map((l) => (
+              <Link
+                key={l.to}
+                to={l.to}
+                className="block bg-card border border-border px-4 py-3 hover:border-primary/50 hover:text-primary transition-colors underline underline-offset-4 decoration-primary/40"
+              >
+                {l.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </Section>
     </>
