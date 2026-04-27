@@ -136,6 +136,17 @@ const relatedShowroom = [
   { label: "Showroom Cost Guide", to: "/blog/showroom-interior-design-cost-gurgaon", description: "Budget benchmarks for retail interiors." },
 ];
 
+const relatedShowroomCategory = [
+  { label: "Showroom Interior Designer in Gurgaon", to: "/showroom-interior-designer-in-gurgaon", description: "The flagship showroom design service hub." },
+  { label: "Retail Showroom Interior Design", to: "/retail-showroom-interior-design-in-gurgaon", description: "High-conversion stores for high-street and mall retail." },
+  { label: "Fashion & Apparel Showroom Design", to: "/fashion-showroom-interior-design-in-gurgaon", description: "Premium boutiques, trial-room journeys and shopfronts." },
+  { label: "Electronics Showroom Design", to: "/electronics-showroom-interior-design-in-gurgaon", description: "Demo bays, durable displays and AV-ready interiors." },
+  { label: "Luxury Brand Showroom Design", to: "/luxury-showroom-interior-design-in-gurgaon", description: "Gallery-grade interiors for jewellery, auto and luxury." },
+  { label: "Showroom Cost Guide", to: "/blog/showroom-interior-design-cost-gurgaon", description: "Per-sq-ft benchmarks and category-wise budgets." },
+  { label: "Showroom Design Ideas to Boost Sales", to: "/blog/showroom-interior-design-ideas-increase-sales-gurgaon", description: "Tactics proven to lift conversion and basket size." },
+  { label: "Interior Cost Calculator", to: "/interior-design-cost-calculator-gurugram", description: "Estimate your showroom build in 2 minutes." },
+];
+
 /* ---------------------------------------------------------------------------
  * Pages
  * ------------------------------------------------------------------------- */
