@@ -103,6 +103,31 @@ const L = {
   catElectronicsAlt: a("/electronics-showroom-interior-design-in-gurgaon", "consumer electronics retail interiors"),
   catLuxury: a("/luxury-showroom-interior-design-in-gurgaon", "luxury showroom interiors"),
   catLuxuryAlt: a("/luxury-showroom-interior-design-in-gurgaon", "luxury brand showroom design"),
+
+  // ---- Homepage feature-box cluster (varied anchors per page) ----
+  homeFB: a("/", "Cargo Interiors"),
+  homeFBAlt: a("/", "the Cargo Interiors homepage"),
+  homeFBStudio: a("/", "our Gurgaon design studio"),
+  designerHubA: a("/interior-designer-in-gurgaon", "top interior designers in Gurugram"),
+  designerHubB: a("/interior-designer-in-gurgaon", "lead interior design team in Gurgaon"),
+  designerHubC: a("/interior-designer-in-gurgaon", "senior interior designers in Gurugram"),
+  designerHubD: a("/interior-designer-in-gurgaon", "expert design consultants in Gurgaon"),
+  designerHubE: a("/interior-designer-in-gurgaon", "principal interior designers in Gurgaon"),
+  trackRecord: a("/interior-designer-projects-in-gurgaon", "100+ delivered interior projects"),
+  trackRecordAlt: a("/interior-designer-projects-in-gurgaon", "decade-long project track record"),
+  trackRecordPort: a("/interior-designer-projects-in-gurgaon", "completed Gurgaon projects portfolio"),
+
+  // Cross-links between the 5 homepage feature pages
+  fbDesignExec: a("/design-and-execution", "integrated design and execution model"),
+  fbDesignExecAlt: a("/design-and-execution", "single-team delivery approach"),
+  fbRapid: a("/rapid-delivery", "fast interior project delivery"),
+  fbRapidAlt: a("/rapid-delivery", "compressed project timelines"),
+  fbMaterials: a("/premium-materials", "high-quality material sourcing"),
+  fbMaterialsAlt: a("/premium-materials", "premium finish specifications"),
+  fbStrategic: a("/strategic-design", "strategy-led interior planning"),
+  fbStrategicAlt: a("/strategic-design", "behaviour-driven design strategy"),
+  fbTransparent: a("/transparent-process", "our transparent workflow"),
+  fbTransparentAlt: a("/transparent-process", "clear, documented project process"),
 };
 
 /* ---------------------------------------------------------------------------
