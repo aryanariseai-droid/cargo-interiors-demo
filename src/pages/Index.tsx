@@ -300,12 +300,16 @@ export default function Index() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { img: project1, title: "Corporate HQ Redesign", type: "Office", impact: "40% increase in employee satisfaction" },
-              { img: project2, title: "Luxury Fashion Showroom", type: "Showroom", impact: "2x increase in average dwell time" },
-              { img: project3, title: "Fine Dining Restaurant", type: "Commercial", impact: "Premium brand perception established" },
+              { img: project1, title: "Corporate HQ Redesign", type: "Office", impact: "40% increase in employee satisfaction", to: "/corporate-hq-office-redesign-interior-design-gurgaon" },
+              { img: project2, title: "Luxury Fashion Showroom", type: "Showroom", impact: "2x increase in average dwell time", to: "/luxury-fashion-showroom-interior-design-gurgaon" },
+              { img: project3, title: "Fine Dining Restaurant", type: "Commercial", impact: "Premium brand perception established", to: "/fine-dining-restaurant-interior-design-gurgaon" },
             ].map((project) => (
-              <div key={project.title} className="group cursor-pointer">
-                <div className="overflow-hidden mb-4">
+              <Link
+                key={project.title}
+                to={project.to}
+                className="group block rounded-xl cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_-10px_hsl(var(--primary)/0.35)]"
+              >
+                <div className="overflow-hidden mb-4 rounded-lg">
                   <img
                     src={project.img}
                     alt={`${project.title} - interior design project in Gurugram`}
@@ -316,9 +320,12 @@ export default function Index() {
                   />
                 </div>
                 <span className="text-primary text-xs uppercase tracking-[0.2em] font-body">{project.type}</span>
-                <h3 className="font-display text-lg font-bold mt-1 mb-1">{project.title}</h3>
-                <p className="text-muted-foreground text-sm font-body">{project.impact}</p>
-              </div>
+                <h3 className="font-display text-lg font-bold mt-1 mb-1 group-hover:text-primary transition-colors">{project.title}</h3>
+                <p className="text-muted-foreground text-sm font-body mb-4">{project.impact}</p>
+                <span className="inline-flex items-center gap-2 text-primary font-body text-xs uppercase tracking-[0.2em] border-b border-primary/40 pb-1 group-hover:border-primary group-hover:gap-3 transition-all">
+                  Read More <span aria-hidden>→</span>
+                </span>
+              </Link>
             ))}
           </div>
           <div className="text-center mt-12">
