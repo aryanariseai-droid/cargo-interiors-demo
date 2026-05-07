@@ -1855,4 +1855,265 @@ export const seoMiniPages: Record<string, SeoMiniPageData> = {
     ctaHeading: "Start a Project You Can Actually Track",
     relatedLinks: relatedFeatureCluster,
   },
+
+  /* ===================== CASE-STUDY / PORTFOLIO PAGES ===================== */
+
+  "corporate-hq-office-redesign-interior-design-gurgaon": {
+    slug: "corporate-hq-office-redesign-interior-design-gurgaon",
+    metaTitle: "Corporate HQ Office Redesign in Gurgaon | Cargo Interiors",
+    metaDescription:
+      "Corporate HQ office redesign in Gurgaon. Executive cabins, meeting rooms, ergonomic workstations and brand-led HQ interiors that lift productivity by 40%.",
+    h1: "Corporate HQ Office Redesign in Gurgaon",
+    intro:
+      `When a company outgrows its first office, the headquarters becomes more than a workspace — it becomes a recruiting tool, a culture statement and a daily productivity engine. Cargo Interiors leads corporate HQ redesigns across Gurgaon for enterprises, MNCs and high-growth scale-ups that need their headquarters to perform on every axis: leadership presence, employee experience, client perception and operational efficiency. As an established <a href="/office-interior-designer-in-gurgaon">office interior designer in Gurgaon</a>, we have rebuilt corporate HQs that lifted reported employee satisfaction by 40% and visibly compressed time-to-decision in leadership floors. This case study captures the strategy, the materials, the engineering and the people behind a typical Cargo HQ redesign in Gurugram.`,
+    sections: [
+      {
+        heading: "The Strategic Brief Behind a Corporate HQ Redesign",
+        paragraphs: [
+          `Most HQ redesigns start with a frustration the leadership team can no longer ignore — fragmented teams across mismatched floors, dated executive cabins that no longer match the brand, meeting rooms that fail under hybrid load, or a reception that feels smaller than the company it represents. Our discovery process, run by our <a href="/design-and-execution">integrated design and execution team</a>, translates those frustrations into a measurable design brief: headcount projections, hybrid attendance ratios, leadership adjacency rules, client-facing zoning and brand presence targets.`,
+          `For one Cyber City headquarters spanning 22,000 sq ft, that brief produced a layout that re-grouped product, design and engineering pods, relocated leadership cabins closer to client meeting suites, and converted three under-used cabins into <a href="/conference-and-meeting-room-design-in-gurgaon">conference and meeting room design</a> upgrades with full AV. The HR team reported a measurable increase in cross-team collaboration within the first quarter post-occupancy.`,
+        ],
+      },
+      {
+        heading: "Workspace Strategy: Leadership, Pods and Hybrid Density",
+        paragraphs: [
+          `Modern HQ design is not about packing the most desks into a floor — it is about engineering the right adjacencies. We zone the floor into leadership suites, client-facing zones, collaborative pods, focus rooms, phone booths and a strong social spine. Hybrid ratios are critical: an HQ designed for 100% attendance wastes capital, while one designed for the lowest day kills culture. We typically design for the 70th-percentile attendance day with overflow seating logic.`,
+          `Workstation density itself is informed by our <a href="/ergonomic-office-interior-design-in-gurgaon">ergonomic office interior design</a> standards — adjustable desks, BIFMA-rated chairs, monitor arms and acoustic baffles where needed. As <a href="/strategic-design">strategy-led interior planners</a>, we treat every square foot as either revenue-supporting, culture-supporting or brand-supporting; nothing is decorative for the sake of it.`,
+        ],
+      },
+      {
+        heading: "Executive Cabins and Meeting Rooms That Earn Their Footprint",
+        paragraphs: [
+          `Executive cabins in a corporate HQ carry an outsized symbolic load. They host investors, clients and senior hires; they need to feel calm, decisive and quietly premium. Our cabins use veneered statement walls, integrated soft lighting, acoustic ceilings and discreet AV — never showy. Glass partitions are detailed with double-glazed acoustic glass and frameless hardware so the leadership floor feels open without being noisy.`,
+          `Meeting rooms are sized to actual usage data, not optimistic guesses. Most HQs need fewer 14-seater boardrooms and many more 4-seater huddle rooms. Each room ships with calibrated AV, microphone arrays and acoustic treatment so hybrid calls are intelligible. This level of detail is normal for our <a href="/commercial-interior-design-gurgaon">commercial interior design company</a> work — and it is the difference between a meeting room people use and one they avoid.`,
+        ],
+      },
+      {
+        heading: "Materials, Acoustics and Lighting Engineered for an HQ",
+        paragraphs: [
+          `Material specification on a corporate HQ is unforgiving — surfaces are touched thousands of times a day, and finishes have to age gracefully across the lease term. We default to BWP-grade plywood carcasses, factory-laminated finishes, branded hardware (Hettich / Hafele / Blum class), commercial-grade LVT or engineered wood flooring, and acoustic ceiling systems rated for open-plan voice load. All choices are documented in line with our <a href="/premium-materials">premium finish specifications</a>.`,
+          `Lighting is layered: high-CRI ambient panels for productivity, decorative pendants in social zones, recessed scene lighting in cabins and indirect cove lighting at brand walls. Acoustics are addressed at the source — partitions, ceilings, floor underlays and soft baffles work together so the floor never crosses NC-40 in open-plan zones. Mechanical, electrical and plumbing run is sequenced and reviewed by our <a href="/design-and-execution">single-team delivery approach</a> to avoid the typical post-handover regret items.`,
+        ],
+      },
+      {
+        heading: "Employee Experience and Brand Presence",
+        paragraphs: [
+          `An HQ redesign succeeds only if employees feel a measurable lift on day one. We design pantries that double as informal meeting zones, breakout areas with daylight access, wellness rooms, mother's rooms and prayer rooms where the brief calls for them. Reception areas are scaled to the brand — a 2,000 sq ft startup HQ should not feel like a 200 sq ft entryway, and a 50,000 sq ft enterprise HQ deserves a proper arrival sequence with branding, seating and concierge logic.`,
+          `Brand presence is layered through wayfinding, accent walls, custom graphics and material storytelling — never reduced to a logo on a wall. As one of the <a href="/interior-designer-in-gurgaon">premium interior design teams in Gurgaon</a>, we treat brand expression as an architectural decision, not a sticker. The result is an HQ that recruits for you in the first ninety seconds of a candidate visit.`,
+        ],
+      },
+      {
+        heading: "Cost, Timeline and ROI Discipline",
+        paragraphs: [
+          `Corporate HQ projects in Gurgaon typically range from ₹2,200–₹4,500 per sq ft for a turnkey fit-out, depending on scope, finish grade and AV intensity. Detailed benchmarks are published in our <a href="/blog/office-interior-design-cost-gurgaon">office interior cost in Gurgaon</a> guide. We lock the BOQ in week one, freeze the program against a written schedule, and run weekly steering reviews so the client never discovers a delay at handover.`,
+          `Typical 10,000–20,000 sq ft HQ floors close in 10–14 weeks of execution after a 2–3 week design lock. Our pricing and program discipline is governed by our <a href="/transparent-process">clear, documented project process</a> and reinforced by our <a href="/strategic-design">behaviour-driven design strategy</a> — every rupee is justified against a productivity, retention or brand outcome.`,
+        ],
+      },
+      {
+        heading: "Why Gurgaon Enterprises Choose Cargo for HQ Redesigns",
+        paragraphs: [
+          `Cargo Interiors is built for corporate HQ work in Gurugram because we combine three rare strengths under one roof: senior strategic designers, an in-house production workshop and an experienced site execution team. That combination — also visible in our <a href="/interior-designer-projects-in-gurgaon">decade-long project track record</a> — is what allows us to deliver HQ redesigns that look like the renders, open on the date we committed, and keep performing five years later. Speak with our team to scope your HQ redesign in Gurgaon today.`,
+        ],
+      },
+    ],
+    benefits: [
+      { title: "40% Lift in Employee Satisfaction", body: "Documented post-occupancy survey gains across delivered HQ floors." },
+      { title: "Hybrid-Ready Density", body: "Workstation, huddle and focus zone ratios sized to real attendance data." },
+      { title: "Premium Executive Suites", body: "Acoustic glass, layered lighting and integrated AV — never showy." },
+      { title: "Brand-Led Reception", body: "Arrival sequences engineered to win candidates and clients in 90 seconds." },
+      { title: "BIFMA-Class Workstations", body: "Adjustable desks, ergonomic chairs and monitor arms as standard." },
+      { title: "Single-Team Accountability", body: "Design, factory, MEP and site under one PM and one contract." },
+    ],
+    process: [
+      { title: "Discovery & Workplace Audit", body: "Headcount projection, attendance data and adjacency requirements." },
+      { title: "Concept & Test-Fit", body: "Multiple test-fits scored on density, collaboration and brand presence." },
+      { title: "Design Lock & 3D", body: "Photoreal 3Ds of cabins, meeting rooms and reception before production." },
+      { title: "BOQ & Schedule Lock", body: "Itemised costing, written timeline and milestone-linked payments." },
+      { title: "Production & Site", body: "In-house joinery built parallel to civil, MEP and ceiling on site." },
+      { title: "Soft Launch & Handover", body: "AV commissioning, snag closure and warranty issuance." },
+    ],
+    trustPoints: baseTrust,
+    ctaHeading: "Plan Your Corporate HQ Redesign in Gurgaon",
+    relatedLinks: [
+      { label: "Office Interior Designer in Gurgaon", to: "/office-interior-designer-in-gurgaon", description: "Our flagship workplace design service." },
+      { label: "Conference & Meeting Room Design", to: "/conference-and-meeting-room-design-in-gurgaon", description: "Boardrooms with premium AV and acoustics." },
+      { label: "Ergonomic Office Interior Design", to: "/ergonomic-office-interior-design-in-gurgaon", description: "Workstations engineered for productivity." },
+      { label: "Office Interior Cost Guide", to: "/blog/office-interior-design-cost-gurgaon", description: "Per-sq-ft benchmarks for HQ fit-outs in Gurgaon." },
+      { label: "Commercial Interior Design Company", to: "/commercial-interior-design-gurgaon", description: "Turnkey commercial interiors across Gurugram." },
+      { label: "Design + Execution Under One Roof", to: "/design-and-execution", description: "One team from concept to handover — zero gaps." },
+      { label: "Strategic Interior Design", to: "/strategic-design", description: "Layouts informed by spatial psychology and brand strategy." },
+      { label: "100+ Project Track Record", to: "/interior-designer-projects-in-gurgaon", description: "A decade of delivered work across Gurgaon." },
+    ],
+  },
+
+  "luxury-fashion-showroom-interior-design-gurgaon": {
+    slug: "luxury-fashion-showroom-interior-design-gurgaon",
+    metaTitle: "Luxury Fashion Showroom Interior Design in Gurgaon | Cargo Interiors",
+    metaDescription:
+      "Luxury fashion showroom interior design in Gurgaon. Premium boutiques, trial-room journeys, brand experience zones and lighting that doubles dwell time.",
+    h1: "Luxury Fashion Showroom Interior Design in Gurgaon",
+    intro:
+      `Luxury fashion is sold by atmosphere, not by price tags. A shopper walking into a premium boutique decides within 30 seconds whether the brand belongs in their wardrobe — and most of that decision is driven by the interior, not the merchandise. Cargo Interiors designs and delivers luxury fashion showrooms across Gurgaon for designer labels, multi-brand boutiques and flagship stores that need to perform on dwell time, basket size and brand recall. As a senior <a href="/showroom-interior-designer-in-gurgaon">showroom interior designer in Gurgaon</a>, our work has consistently doubled average dwell time and lifted average order value for fashion clients in DLF, MG Road and Cyber Hub catchments.`,
+    sections: [
+      {
+        heading: "Fashion Showroom Strategy: Designing for the Buying Decision",
+        paragraphs: [
+          `A luxury fashion showroom is a sequence of decisions, not a single room. The shopfront commits to the visit; the entrance sets the brand tone; the first display zone qualifies the price expectation; the central floor invites browsing; the trial rooms convert intent into purchase; and the billing zone seals brand memory. Each of those moments needs to be designed in isolation and choreographed together — which is exactly how our <a href="/showroom-interior-designer-in-gurgaon">expert showroom interior designers in Gurgaon</a> approach every brief.`,
+          `That sequencing is also informed by our work on <a href="/customer-flow-optimization-in-showroom-design-gurgaon">customer flow optimisation</a> — the layout decisions that determine whether a shopper sees 30% of your merchandise or 80% of it before they leave. In luxury fashion, the difference between those two numbers is the difference between an empty quarter and a brand on the rise.`,
+        ],
+      },
+      {
+        heading: "Lighting and Visual Merchandising for Luxury Apparel",
+        paragraphs: [
+          `Lighting is the single most under-budgeted element of fashion retail. A luxury showroom needs at least three layers — ambient lighting calibrated to the brand mood, accent lighting on hero merchandise at 3x ambient lux, and decorative lighting that becomes part of the brand language. Colour temperature has to be locked to flatter the fabric palette; we typically run 3000K for warm-tone collections and 3500K for cooler palettes, with CRI ≥ 90 across all fixtures.`,
+          `We integrate this lighting plan with our <a href="/lighting-and-visual-merchandising-in-showroom-interior-design-gurgaon">visual merchandising and lighting design</a> system so display windows, tables, mannequins and wall units all share one cohesive light story. The result is merchandise that photographs as well in person as it does in the brand campaign — a small but decisive luxury cue.`,
+        ],
+      },
+      {
+        heading: "Customer Flow Optimization and Dwell Time Design",
+        paragraphs: [
+          `Dwell time is the strongest predictor of average order value in fashion retail. A shopper who spends six minutes inside a luxury boutique converts at roughly 2x the rate of one who spends two. We design for dwell time deliberately — measured aisle widths, decompression zones inside the entrance, calibrated sight lines that pull shoppers deeper into the floor, and resting points that let companions wait comfortably while the buyer browses.`,
+          `These are not aesthetic decisions; they are commercial ones. Our approach is documented in detail on our dedicated <a href="/customer-flow-optimization-in-showroom-design-gurgaon">customer flow optimisation</a> page, and is part of why our fashion clients see real lift in their conversion metrics post-redesign. Behaviour design at this level is exactly what our <a href="/strategic-design">strategy-led interior planning</a> team brings to every brief.`,
+        ],
+      },
+      {
+        heading: "Brand Experience Zones and Trial-Room Journeys",
+        paragraphs: [
+          `Luxury fashion showrooms need a defined <a href="/brand-experience-area-interior-design-in-gurgaon">brand experience area</a> — a zone that tells the brand story, hosts capsule collections, anchors photography and gives press a reason to write about the store. We typically position this as a destination at the rear of the floor, pulling shoppers through the full merchandise journey to reach it.`,
+          `Trial rooms are the second conversion engine. A poorly designed trial room kills sales — bad lighting, narrow doors, no hooks, no seating for companions. Our trial rooms are sized generously, lit with skin-flattering high-CRI light, finished with premium acoustic doors, and equipped with concierge call buttons. Combined with carefully composed <a href="/product-display-zone-interior-design-in-gurgaon">product display zones</a>, the floor turns intent into purchase with measurable consistency.`,
+        ],
+      },
+      {
+        heading: "Premium Finishes, Materials and Detailing",
+        paragraphs: [
+          `Material specification in a luxury fashion showroom is the brand's quietest but loudest signal. We work with brushed and antiqued metals, fluted wood, terrazzo, micro-cement, fabric-wrapped panels, fluted glass and stone where the budget allows. Floor materials are chosen for both aesthetics and acoustics — luxury shoppers feel the difference between hard echo and warm absorption within seconds of entering. All material decisions follow our <a href="/premium-materials">premium finish specifications</a>, with named brands and IS codes per BOQ line.`,
+          `Hardware, joinery and finishing trades are executed by our in-house team — there is no sub-contracted carpenter making finish decisions in your showroom. As a full-service <a href="/commercial-interior-design-gurgaon">commercial interior design company</a> in Gurgaon, we control the chain from material approval to final polish, which is the only way luxury detail survives execution.`,
+        ],
+      },
+      {
+        heading: "Cost, Timeline and Launch Readiness",
+        paragraphs: [
+          `Luxury fashion showrooms in Gurgaon typically range from ₹3,500–₹6,500 per sq ft turnkey, depending on lighting density, joinery complexity and stone or metal usage. Detailed benchmarks are published in our <a href="/blog/showroom-interior-design-cost-gurgaon">showroom interior cost in Gurgaon</a> guide. Timelines for a 2,000–4,000 sq ft boutique typically run 8–12 weeks from BOQ lock, with hard launch dates we commit to in writing.`,
+          `Our delivery is governed by the same discipline that powers every Cargo project — visible across our <a href="/interior-designer-projects-in-gurgaon">completed Gurgaon projects portfolio</a>. Brief our team to scope a luxury fashion showroom that opens on the date you announced and converts from week one.`,
+        ],
+      },
+    ],
+    benefits: [
+      { title: "2x Dwell Time", body: "Layout, lighting and flow tuned to keep luxury shoppers on the floor longer." },
+      { title: "Higher Average Order Value", body: "Trial-room and adjacency design engineered to lift basket size." },
+      { title: "Brand-Grade Lighting", body: "Three-layer lighting with CRI ≥ 90, tuned to the collection palette." },
+      { title: "Conversion-Focused Trial Rooms", body: "Generous, flattering, acoustically sealed and concierge-ready." },
+      { title: "Press-Worthy Brand Zone", body: "A destination wall that earns photography and editorial coverage." },
+      { title: "Launch-Date Discipline", body: "Hard launch dates committed in writing and held under steering review." },
+    ],
+    process: [
+      { title: "Brand & Catchment Brief", body: "Brand mood, target shopper and catchment economics captured in writing." },
+      { title: "Concept, Mood & 3D", body: "Material palette, lighting story and photoreal 3Ds before production." },
+      { title: "Flow & VM Layout Lock", body: "Aisle widths, sight lines and display hierarchy fixed against sales targets." },
+      { title: "Production & Procurement", body: "In-house joinery and pre-procured stone, metal and lighting." },
+      { title: "Site Execution & Finishing", body: "Civil, MEP, joinery and finishing under one PM, with senior design sign-off." },
+      { title: "VM Styling & Launch", body: "Final visual merchandising, lighting commissioning and launch handover." },
+    ],
+    trustPoints: baseTrust,
+    ctaHeading: "Brief Your Luxury Fashion Showroom in Gurgaon",
+    relatedLinks: [
+      { label: "Showroom Interior Designer in Gurgaon", to: "/showroom-interior-designer-in-gurgaon", description: "Our flagship showroom design service." },
+      { label: "Lighting & Visual Merchandising", to: "/lighting-and-visual-merchandising-in-showroom-interior-design-gurgaon", description: "Lighting schemes that lift product appeal." },
+      { label: "Customer Flow Optimization", to: "/customer-flow-optimization-in-showroom-design-gurgaon", description: "Walk paths designed to maximise dwell time." },
+      { label: "Brand Experience Area Design", to: "/brand-experience-area-interior-design-in-gurgaon", description: "Immersive zones that anchor your brand story." },
+      { label: "Product Display Zone Design", to: "/product-display-zone-interior-design-in-gurgaon", description: "Display layouts engineered for product hierarchy." },
+      { label: "Showroom Interior Cost Guide", to: "/blog/showroom-interior-design-cost-gurgaon", description: "Per-sq-ft benchmarks for retail interiors." },
+      { label: "Commercial Interior Design Company", to: "/commercial-interior-design-gurgaon", description: "Turnkey commercial interiors across Gurugram." },
+      { label: "Luxury Brand Showroom Design", to: "/luxury-showroom-interior-design-in-gurgaon", description: "Gallery-grade interiors for luxury categories." },
+    ],
+  },
+
+  "fine-dining-restaurant-interior-design-gurgaon": {
+    slug: "fine-dining-restaurant-interior-design-gurgaon",
+    metaTitle: "Fine Dining Restaurant Interior Design in Gurgaon | Cargo Interiors",
+    metaDescription:
+      "Fine dining restaurant interior design in Gurgaon. Atmospheric lighting, acoustic comfort, premium hospitality finishes and seating flows that build repeat guests.",
+    h1: "Fine Dining Restaurant Interior Design in Gurgaon",
+    intro:
+      `Fine dining is a hospitality experience, not a meal. Guests remember the lighting, the acoustics, the chair they sat in and the way the room felt long before they remember a specific dish. Cargo Interiors designs upscale restaurants across Gurgaon for chef-led concepts, hotel F&B brands and standalone fine dining venues that need their interior to do as much work as the kitchen. As experienced commercial designers — not generic <a href="/restaurant-interior">restaurant interior designers in Gurgaon</a>, but operators who understand cover counts, table turn cycles and sound propagation — we deliver dining rooms that earn premium price points and bring guests back.`,
+    sections: [
+      {
+        heading: "Dining Atmosphere Strategy: Designing the Memory",
+        paragraphs: [
+          `Atmosphere is engineered, not stumbled upon. We start every fine dining brief with a clear emotional target — intimate, theatrical, celebratory, romantic, classical — and then translate it into measurable design moves: lux levels at the table, colour temperature at the bar, acoustic absorption at the ceiling, seat pitch in the booth, and material palette across walls and floor. As part of our <a href="/luxury-showroom-interior-design-in-gurgaon">luxury commercial interior design</a> practice, we treat ambience as a deliverable with a spec sheet, not a vibe.`,
+          `That discipline is what allows our fine dining work to feel premium without feeling staged — and it is part of why our hospitality clients consistently report stronger word-of-mouth and review velocity post-redesign. Our broader <a href="/interior-designer-projects-in-gurgaon">decade-long project track record</a> across commercial categories backs every choice with real performance data.`,
+        ],
+      },
+      {
+        heading: "Seating & Flow Planning for Cover Count and Comfort",
+        paragraphs: [
+          `Seating layout is the single biggest commercial decision in a restaurant interior. Pack too tightly and guests feel rushed; spread too generously and the unit economics break. We size seat pitch, table widths, banquette depth and aisle clearances against the operator's cover target and table turn assumption — usually two turns at dinner for fine dining, with comfort margins that protect the premium experience.`,
+          `Service flow is designed alongside seating. Server stations, tray landings, runner pathways and bussing routes are mapped so guests never feel the back-of-house in the dining room. This level of planning is part of our <a href="/strategic-design">behaviour-driven design strategy</a> — every layout decision tested against guest experience, server efficiency and cover count economics in parallel.`,
+        ],
+      },
+      {
+        heading: "Acoustic Treatment: The Hidden Premium Signal",
+        paragraphs: [
+          `Acoustics are the most under-invested element of Indian fine dining — and the most damaging when ignored. A reverberant dining room kills conversation, exhausts guests and shortens dwell time. We design every room against a target reverberation time (typically 0.5–0.8 seconds at 1 kHz) using a combination of acoustic ceilings, wall panels disguised as design elements, fabric upholstery, banquette absorption and floor underlays.`,
+          `Where the architecture is working against us — exposed concrete soffits, glass facades, hard floors — we deploy decorative acoustic baffles and slatted timber that reads as design language while solving an acoustic problem. The same engineering rigour that powers our <a href="/lighting-and-visual-merchandising-in-showroom-interior-design-gurgaon">lighting design for commercial interiors</a> is brought to every acoustic plan.`,
+        ],
+      },
+      {
+        heading: "Lighting Design for Fine Dining Mood",
+        paragraphs: [
+          `Lighting in fine dining is the single most powerful mood lever. We layer four planes — table-level lighting (warm 2700K, focused on the plate), face-level lighting (soft, indirect, flattering), ambient lighting (low-level wash for room mood) and decorative feature lighting (chandeliers, pendants, sculptural fixtures). Dimming is zoned by service period — brighter for lunch, progressively warmer and lower across the dinner service.`,
+          `Every fixture is specified with high CRI to render food and skin tones accurately; nothing kills appetite faster than blue-cast LED on a plated dish. Our lighting plans are produced in coordination with the operator's signature dishes and brand identity, the same way our <a href="/showroom-interior-designer-in-gurgaon">showroom interior design</a> team coordinates with merchandising plans.`,
+        ],
+      },
+      {
+        heading: "Premium Hospitality Materials and Finishes",
+        paragraphs: [
+          `Fine dining surfaces take more abuse than almost any other commercial interior — wine, oil, repeated cleaning, chair scrape, foot traffic. We specify against that reality: stone or engineered stone tops, brushed metal accents, leather and performance-fabric upholstery rated for hospitality use, sealed timber, and floors chosen for slip rating, acoustic performance and aesthetic warmth in equal measure. All choices follow our <a href="/premium-materials">premium materials for commercial interior design</a> standard.`,
+          `Joinery — banquettes, bar fronts, host stations, wine displays — is built in our in-house workshop with hospitality-grade tolerances and finishes that are designed to age gracefully across the lease term, not just look good on launch night. As an established <a href="/commercial-interior-design-gurgaon">commercial interior design company</a> in Gurgaon, we underwrite these specifications with named brands and IS codes per BOQ line.`,
+        ],
+      },
+      {
+        heading: "Customer Retention Psychology and Repeat-Visit Design",
+        paragraphs: [
+          `Repeat guests are the engine of profitable fine dining. Interior design influences repeat behaviour in ways most operators underestimate — the comfort of the chair, the privacy of the table, the confidence the server projects (which is partly architectural), the ease of conversation at peak hours. We design for the second visit deliberately: a few signature corner tables that loyal guests can request, a host stand that feels personal, a bar that works for solo dining as well as group celebration.`,
+          `That intentionality is held together by our <a href="/transparent-process">clear, documented project process</a> and our <a href="/design-and-execution">single-team delivery approach</a> — so the room you opened is the room you operate three years later, with the same finish quality and atmosphere intact.`,
+        ],
+      },
+      {
+        heading: "Cost, Timeline and Launch Discipline",
+        paragraphs: [
+          `Fine dining interiors in Gurgaon typically range from ₹3,000–₹6,000 per sq ft turnkey, depending on kitchen scope, joinery complexity and material grade. We lock the BOQ in week one, freeze a written program with milestone-linked payments, and run weekly steering reviews so the launch date holds. Most 3,000–5,000 sq ft venues close in 10–14 weeks of execution after design lock.`,
+          `Brief our team to design a fine dining venue in Gurgaon that earns its premium price point from the first cover served — and keeps earning it across the life of the lease.`,
+        ],
+      },
+    ],
+    benefits: [
+      { title: "Atmosphere as a Spec", body: "Lux levels, colour temperatures and reverberation times treated as deliverables." },
+      { title: "Cover-Count Engineered Layout", body: "Seat pitch and table widths sized to economics without losing comfort." },
+      { title: "Acoustic Comfort", body: "Target RT60 0.5–0.8s — conversation stays effortless even at full house." },
+      { title: "Four-Layer Lighting Design", body: "Table, face, ambient and feature lighting zoned across service periods." },
+      { title: "Hospitality-Grade Materials", body: "Stone, performance fabrics and sealed timber engineered for daily abuse." },
+      { title: "Repeat-Visit Detailing", body: "Signature tables, intimate corners and host-stand design that builds loyalty." },
+    ],
+    process: [
+      { title: "Concept & Operator Brief", body: "Cuisine, cover target, turn assumption and brand mood captured in writing." },
+      { title: "Layout & Cover Plan", body: "Seating, service flow and BOH/FOH adjacencies tested against economics." },
+      { title: "3D, Lighting & Acoustic Plan", body: "Photoreal 3Ds with lighting and acoustic engineering documented." },
+      { title: "BOQ & Schedule Lock", body: "Itemised costing, written timeline and milestone-linked payments." },
+      { title: "Production & Site Execution", body: "In-house joinery built parallel to civil, MEP and finishing on site." },
+      { title: "Soft Launch & Handover", body: "Lighting scene programming, acoustic verification and snag closure." },
+    ],
+    trustPoints: baseTrust,
+    ctaHeading: "Design a Fine Dining Venue in Gurgaon That Earns Its Premium",
+    relatedLinks: [
+      { label: "Restaurant Interior Design", to: "/restaurant-interior", description: "Our hospitality interior design service." },
+      { label: "Luxury Showroom & Brand Interiors", to: "/luxury-showroom-interior-design-in-gurgaon", description: "Gallery-grade interiors for luxury categories." },
+      { label: "Lighting Design for Commercial Interiors", to: "/lighting-and-visual-merchandising-in-showroom-interior-design-gurgaon", description: "Lighting schemes engineered for atmosphere and product." },
+      { label: "Premium Materials & Finishes", to: "/premium-materials", description: "Named brands, IS codes and finishes built to last." },
+      { label: "Commercial Interior Design Company", to: "/commercial-interior-design-gurgaon", description: "Turnkey commercial interiors across Gurugram." },
+      { label: "Design + Execution Under One Roof", to: "/design-and-execution", description: "One team from concept to launch — zero gaps." },
+      { label: "Transparent Project Process", to: "/transparent-process", description: "Itemised BOQs, written timelines and milestone-linked payments." },
+      { label: "100+ Project Track Record", to: "/interior-designer-projects-in-gurgaon", description: "A decade of delivered work across Gurgaon." },
+    ],
+  },
 };
