@@ -257,17 +257,24 @@ export default function Index() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "Design + Execution", desc: "We don't hand off drawings. We design, build, and deliver — end to end. One team. Zero gaps." },
-              { title: "Rapid Delivery", desc: "Time is money. Our streamlined process and 80+ person team ensures your space is ready when you need it." },
-              { title: "Premium Materials", desc: "We source materials that look exceptional and last. No shortcuts. No compromises on quality." },
-              { title: "Strategic Design", desc: "Every layout decision is backed by spatial psychology, brand strategy, and business objectives." },
-              { title: "Proven Track Record", desc: "100+ projects. 15+ cities. A decade of trust from business owners who don't settle for average." },
-              { title: "Transparent Process", desc: "Detailed proposals, clear timelines, and honest communication. You always know where your project stands." },
+              { title: "Design + Execution", desc: "We don't hand off drawings. We design, build, and deliver — end to end. One team. Zero gaps.", to: "/design-and-execution" },
+              { title: "Rapid Delivery", desc: "Time is money. Our streamlined process and 80+ person team ensures your space is ready when you need it.", to: "/rapid-delivery" },
+              { title: "Premium Materials", desc: "We source materials that look exceptional and last. No shortcuts. No compromises on quality.", to: "/premium-materials" },
+              { title: "Strategic Design", desc: "Every layout decision is backed by spatial psychology, brand strategy, and business objectives.", to: "/strategic-design" },
+              { title: "Proven Track Record", desc: "100+ projects. 15+ cities. A decade of trust from business owners who don't settle for average.", to: "/interior-designer-projects-in-gurgaon" },
+              { title: "Transparent Process", desc: "Detailed proposals, clear timelines, and honest communication. You always know where your project stands.", to: "/transparent-process" },
             ].map((item) => (
-              <div key={item.title} className="bg-card border border-border p-8 hover:border-primary/30 transition-colors">
-                <h3 className="font-display text-lg font-bold mb-3">{item.title}</h3>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed">{item.desc}</p>
-              </div>
+              <Link
+                key={item.title}
+                to={item.to}
+                className="group flex flex-col bg-card border border-border p-8 rounded-xl cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-[0_10px_30px_-10px_hsl(var(--primary)/0.35)]"
+              >
+                <h3 className="font-display text-lg font-bold mb-3 group-hover:text-primary transition-colors">{item.title}</h3>
+                <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">{item.desc}</p>
+                <span className="mt-auto inline-flex items-center gap-2 text-primary font-body text-xs uppercase tracking-[0.2em] border-b border-primary/40 pb-1 self-start group-hover:border-primary group-hover:gap-3 transition-all">
+                  Read More <span aria-hidden>→</span>
+                </span>
+              </Link>
             ))}
           </div>
         </div>
