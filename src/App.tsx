@@ -38,6 +38,7 @@ import OfficeInteriorDLFPhase1EBlock from "./pages/OfficeInteriorDLFPhase1EBlock
 import HomeInteriorPortfolioGurgaon from "./pages/HomeInteriorPortfolioGurgaon.tsx";
 import HomeProjectDetail from "./pages/HomeProjectDetail.tsx";
 import SeoMiniPageRoute from "./pages/SeoMiniPageRoute.tsx";
+import BuiltByAryanSrivastav from "./pages/BuiltByAryanSrivastav.tsx";
 import { seoMiniPages } from "./data/seoMiniPages";
 
 const queryClient = new QueryClient();
@@ -97,6 +98,7 @@ const App = () => (
             <Route path="/interior-cost-calculator" element={<Navigate to="/interior-design-cost-calculator-gurugram" replace />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/built-by-aryan-srivastav" element={<BuiltByAryanSrivastav />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
